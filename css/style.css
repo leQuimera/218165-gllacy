@@ -1,0 +1,10 @@
+body {
+	/*жирность шрифта,
+*/
+
+	font-size: 12px;
+	line-height: 16px;
+	font-family: "Roboto" "Narrow" Arial;
+	color: #ffffff;
+	font-weight: normal;
+}
