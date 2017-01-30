@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="utf-8">
-	<title>HTML Academy: Глейси</title>
-	<link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-	<div class="wrapped">
-		<header class="contain clearfix">
-			<div class="top_in_line clearfix">
-				<div class="top_pic_logo">
-					<img src="img/logo_site.png" width="154" height="64" alt="Лого проекта">
-				</div>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Глейси</title>
+	</head>
+	<body>
+		<header class="main_header">
+			<div class="top_in_line">
+				<img src="img/logo_site.png" width="80" height="50" alt="Лого проекта">
 				<nav class="top_menu">
-					<ul class="nav_menu">
+					<ul>
 						<li><a href="#">Каталог</a></li>
 						<li><a href="#">Доставка и оплата</a></li>
 						<li><a href="#">О компании</a></li>
 					</ul>
 				</nav>
-				<div class="top_user_block" >
-					<ul class="user_menu">
+				<div class="top_user_block">
+					<ul>
 						<li><a href="#">Поиск</a></li>
 						<li><a href="#">Вход</a></li>
 						<li><a href="#">Корзина</a></li>
@@ -28,71 +24,92 @@
 				</div>
 			</div>
 			<div class="work_time">
-				<span class="work_houre">с 10 до 20 ежедневно</span><br>
+				<span class="work_houre">с 10 до 20 ежедневно</span>
 				<span class="work_tel">8 812 450-25-25</span>
-			</div>
 		</header>
-
-
-		<main>
-			<div class="contain">
-				<div class="vidget_text">
-					<p>Крем-брюле и пломбир с малиновым джемом</p>
-					<a href="#">Дайте оба!</a>
+		
+		<main class="main_zone">
+			<div class="main_section">
+				<div class="widget">
+					<div class="vidget_container">
+						<div class="vidget_gif">
+							<img src="img/ad_ice_1.png" width="1045" height="881" alt="Спецпредложение">
+						</div>
+						<div class="vidget_text">
+							<p>Крем-брюле и пломбир с малиновым джемом</p>
+							<a href="#">Дайте оба!</a>
+						</div>
+						<div class="widget_nav">
+							<button class="widget_button">Раз</button>
+							<button class="widget_button">Два</button>
+							<button class="widget_button">Три</button>
+						</div>
+					</div>
 				</div>
-				<section class="bannered clearfix">
-					<article class="banner b_left">
-						<header class="ad">
-							<h2 class="ad">Малина даром!</h2>
+				<section class="ad">
+					<article class="ad_left">
+						<header class="ad_left">
+							<h2 class="ad_left">Малина даром!</h2>
 						</header>
-						<section class="ad">
-							При покупке 2 кглюбого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
+						<section class="ad_left">
+							При покупке 2 кглюбого фруктового мороженого добавим в ваш заказ бнку малинового варенья бесплатно.
 						</section>
-						<a href="#" class="ad">Хочу варенье!</a>
-					</article>
-					<article class="banner b_right">
-						<header class="ad">
-							<h2 class="ad">Шоколадки даром!</h2>
+						<a href="#" class="ad_left">Хочу варенье!</a>
+					</article>	
+					<article class="ad_right">
+						<header class="ad_">
+							<h2 class="ad_right">Шоколадки даром!</h2>
 						</header>
-						<section class="ad">
+						<section class="ad_right">
 							При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
 						</section>
-						<a href="#" class="ad">Хочу шоколадки!</a>
+						<a href="#" class="ad_right">Хочу шоколадки!</a>
 					</article>
 				</section>
 
 				<section class="gallery">
 					<article class="gallery_item art_item1 ">
-						<a href="#"><img src="img/ice_orange.jpg" width="267" height="267" alt="Хит" class="gallery_ice_product"></a>
-						<div class="gallery_desc">
-							<p class="gallery_price">310&#8381;/кг</p>
+						<div class="gallery_img">
+							<img src="img/ico_hits.png" width="61" height="61" alt="Хит" class="hit">
+							<a href="#"><img src="img/ice_orange.jpg" width="267" height="267" alt="Хит" class="gallery_ice_product"></a>
+						</div>
+						<div class="gallery description">
+							<p class="gallery_price">310Р/кг</p>
 							<a href="#">Сливочное с апельсиновым джемом и кокосовой стружкой</a>
 						</div>
 					</article>
 					<article class="gallery_item art_item2">
-						<a href="#"><img src="img/ice_chok.jpg" width="267" height="267" alt="Хит" class="gallery_ice_product"></a>
-						
-						<div class="gallery_desc">
-							<p class="gallery_price">380&#8381;/кг</p>
+						<div class="gallery_img">
+							<img src="img/ico_hits.png" width="61" height="61" alt="Хит" class="hit">
+							<a href="#"><img src="img/ice_chok.jpg" width="267" height="267" alt="Хит" class="gallery_ice_product"></a>
+						</div>
+						<div class="gallery description">
+							<p class="gallery_price">380Р/кг</p>
 							<a href="#">Сливочное-кофейное с кусочками шоколада</a>
 						</div>
 					</article>
 					<article class="gallery_item art_item3">
-						<a href="#"><img src="img/ice_pink.jpg" width="267" height="267" alt="Хит" class="gallery_ice_product"></a>
-						<div class="gallery_desc">
-							<p class="gallery_price">355&#8381;/кг</p>
+						<div class="gallery_img">
+							<img src="img/ico_hits.png" width="61" height="61" alt="Хит" class="hit">
+							<a href="#"><img src="img/ice_pink.jpg" width="267" height="267" alt="Хит" class="gallery_ice_product"></a>
+						</div>
+						<div class="gallery description">
+							<p class="gallery_price">355Р/кг</p>
 							<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 						</div>
 					</article>
 					<article class="gallery_item art_item4">
-						<a href="#"><img src="img/ice_crem.jpg" width="267" height="267" alt="Хит" class="gallery_ice_product"></a>
-						<div class="gallery_desc">
-							<p class="gallery_price">415&#8381;/кг</p>
+						<div class="gallery_img">
+							<img src="img/ico_hits.png" width="61" height="61" alt="Хит" class="hit">
+							<a href="#"><img src="img/ice_crem.jpg" width="267" height="267" alt="Хит" class="gallery_ice_product"></a>
+						</div>
+						<div class="gallery description">
+							<p class="gallery_price">415Р/кг</p>
 							<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 						</div>
 					</article>
 				</section>
-				<section class="glacy_shop clearfix">
+				<article class="glacy_shop">
 					<p class="glacy_shop_head">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</p>
 					<div class="glacy_shop_item glacy_shop_item1">
 						<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -106,13 +123,13 @@
 					<div class="glacy_shop_item glacy_shop_item4">
 						<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 					</div>
-				</section>
-				<section class="bannered clearfix">
-					<article class="banner b_news">
+				</article>
+				<section class="news">
+					<article class="news_left_new">
 						<h2>Новое в нашем блоге</h2>
 						<a href="#">10 сопособов сервировки фруктовых щербетов к столу</a>
 					</article>	
-					<article class="banner b_send">
+					<article class="news_right_connect">
 						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 						<div class="send_form">
 							<form class="contact_us" action="/echo" method="post">
@@ -123,13 +140,25 @@
 					</article>
 				</section>
 			</div>
-			<div class="map">
-
+			<div class="where_we_are">
+				<div class="where_map">
+				</div>	
+				<div class="where_adress">
+					<div class="where_adress_text">
+						<p>Адрес главного офиса и офлайн магазина:<br>
+						<span class="where_adress_item">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
+						<p>Для заказов по телефону:<br>
+						<span class="where_adress_tel">8 812 450 25 25</span><br>
+						(с 10 до 20 ежедневно)</p>
+					</div>
+					<div class="where_adress_link">
+						<a href="#">Форма обратной связи</a>
+					</div>
+				</div>
 			</div>
 		</main>
-
-		<footer class="contain">
-			<div class="footer_info clearfix">
+		<footer class="main_footer">
+			<div class="foter_info">
 				<div class="footer_social">
 					<ul class="footer_social_btn">
 						<li class="social_btn"><a href="#" class="social_btn_tw">Твитер</a></li>
@@ -146,11 +175,10 @@
 						<li class="cont_btn"><a href="#" class="contact_eco">Экологические стандарты</a></li>
 					</ul>
 				</div>
-				<div class="footer_cr">
+				<div class="footer_cw">
 					<p>Сделано в <a href="#">HTML Academy</a> 2016</p>
 				</div>
 			</div>
 		</footer>
-	</div>
-</body>
+	</body>
 </html>
