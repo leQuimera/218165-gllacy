@@ -13,6 +13,10 @@ body {
   background-color:  #849d8f;
 }
 
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
 
 .wrapped {
   padding-top: 10px;
@@ -21,12 +25,8 @@ body {
 }
 
 .contain {
-  padding: 0 27px;
+  padding: 0 26px;
   width: 1146px;
-  margin: 0 auto;
-}
-
-.top_in_line{
 }
 
 .top_pic_logo{
@@ -36,8 +36,15 @@ body {
 
 .top_menu{
   float: left;
-  margin-left: 17px;
+  margin-left: 23px;
+  margin-top: 19px;
   max-width: 650px;
+}
+
+.top_user_block{
+  float:  right;
+  margin-top: 15px;
+  width:  267px;
 }
 
 .nav_menu,
@@ -50,7 +57,13 @@ body {
 
 .nav_menu li{
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 28px;
+}
+
+.nav_menu a{
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .user_menu li{
@@ -58,27 +71,52 @@ body {
   margin-right: 12px;
 }
 
-
-.crumbs li{
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.top_user_block{
-  float:  right;
-  width:  267px;
-}
-
 .work_time{
   float: right;
   min-height: 40px;
   text-align: right;
+  margin-top: -7px;
+}
+
+.work_tel{
+  font-size: 22px;
+}
+
+.crumbs ul{
+  padding-left: 0px;
+}
+
+.crumbs li{
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.catalog{
+  margin-top: -10px; 
+}
+
+.catalog h1{
+  font-size: 35px;
 }
 
 .vidget_text{
   margin-bottom: 40px;
-  padding-top: 270px;
+  padding-top: 210px;
   text-align: center;
+  min-height: 280px;
+}
+
+.vidget_text p{
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.vidget_text a{
+  display: inline;
+  padding-top: 1px;
+  font-size: 32px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .widget_nav{
@@ -91,7 +129,7 @@ body {
 }
 
 .banner{
-  padding: 20px;
+  padding: 0 20px 0;
   width: 520px;
   border-radius: 15px;
 }
@@ -99,24 +137,36 @@ body {
 .b_left{
   float: left;
   background-color: #60031c;
+  min-height: 220px;
 }
 
 .b_right{
   float: right;
   background-color: #0c0300;
+  min-height: 220px;
 }
 
 .b_news{
   float: left;
   background-color: #ffffff;
-  color: black;
+  color: #323232;
   padding-top: 23px;
+  min-height: 170px;
 }
 
 .b_send{
   float: right;
   background-color: #ffffff;
-  color: black;
+  color: #323232;
+  min-height: 193px;
+}
+
+.ad{
+  font-size: 18px;
+}
+
+.ad h2{
+  font-size: 35px;
 }
 
 .gallery{
@@ -142,6 +192,9 @@ body {
   margin-bottom: 40px;
   padding-top: 20px;
   padding-left: 24px;
+  background-color: #ebdec2;
+  width: 1100px;
+  color: #323232;
 }
 
 .glacy_shop_item{
@@ -160,13 +213,23 @@ body {
 
 .gallery_desc{
   margin-top: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
+.b_news h2{
+  font-size: 16px;
+}
+
+.b_news a{
+  font-size: 24px;
+  color: #323232;
+}
 .map{
+  box-sizing: border-box;
   margin-top: 40px;
-  height: 430px;
+  min-height: 430px;
+  width: 
   background: url(../img/map.jpg);
 }
 
@@ -193,8 +256,8 @@ body {
 }
 
 .filter{
+  padding-top: 5px;
   min-height:  75px;
-  background-color:  #aaafff;
 }
 
 .contain h1{
@@ -208,8 +271,9 @@ body {
   font-size: 14px;
 }
 
-.filter_view{
-  padding-right: 30px;
+.filter_view,
+.user_menu li{
+  padding-left: 15px;
   height: 34px;
   background: #a9bab0;
   border-color: #a9bab0;
@@ -218,17 +282,16 @@ body {
 
 .ice_select{
  display: inline-block;
- margin-right: 13px;
- margin-bottom: 12px;
+ margin-right: 10px;
+ margin-bottom: 19px;
  vertical-align: top;
- font-size: 16px;
+ min-width: 194px;
 }
 
 .ice_type{
   padding-left: 11px;
   width: 130%;
   height: 35px;
-  font-size: 16px;
   line-height: 35px;
   background: #a6b8ae;
   border-style: none;
@@ -236,27 +299,41 @@ body {
 
 .ice_price{
   display: inline-block;
-  margin-right: 13px;
-  margin-bottom: 12px;
+  margin-right: 10px;
+  margin-bottom: 19px;
   vertical-align: top;
- width:  235px;
- }
+  min-width:  220px;
+}
 
 .fatness{
   display: inline-block;
-  margin-right: 13px;
-  margin-bottom: 12px;
+  margin-bottom: 19px;
   vertical-align: top;
-  width:  419px;
+  min-width:  410px;
+}
+
+.filler{
+  display: inline-block;
+  margin-bottom: 19px;
+  vertical-align: top;
+  min-width:  700px;
 }
 
 .fatness_change,
-.filler_check{
+.filler_check,
+.frm_btn{
   display: inline-block;
 }
 
+.filter_button{
+  margin-top: 25px;
+  margin-left: 25px;
+}
 
-
+.switch_button{
+  float: right;
+  margin-left: 20px;
+}
 
 .clearfix::after {
   content: "";
@@ -264,63 +341,3 @@ body {
   clear: both;
 }
 
-
-/*======================================
- Системное оформление - не изменять
- =======================================*/
-
- body {
-  padding: 3px;
-}
-
-body > *,
-body > * > *,
-body > * > * > * {
-  position: relative;
-}
-
-body > *::before,
-body > * > *::before,
-body > * > * > *::before {
-  content: "";
-  position: absolute;
-
-  height: 24px;
-  padding: 2px 5px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Courier New", monotype;
-  white-space: nowrap;
-}
-
-body > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > * > *::before {
-  top: 0;
-  left: 0;
-}
-
-body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-
-body > *::before {
-  color: white;
-
-  background: green;
-}
-
-.main-header::before {
-  content: ".main-header";
-}
