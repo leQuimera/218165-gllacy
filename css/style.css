@@ -18,6 +18,11 @@ a{
   text-decoration: none;
 }
 
+h1{
+  font-size: 35px;
+}
+
+
 .wrapped {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -27,6 +32,7 @@ a{
 .contain {
   padding: 0 26px;
   width: 1146px;
+  margin: 0 auto;
 }
 
 .top_pic_logo{
@@ -49,10 +55,18 @@ a{
 
 .nav_menu,
 .user_menu,
-.crumbs{
+.crumbs,
+.footer_social_btn,
+.footer_contacts_btn,
+.shop_info_list{
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 0
+}
+
+.user_menu{
+  float: right;
 }
 
 .nav_menu li{
@@ -69,6 +83,7 @@ a{
 .user_menu li{
   display: inline-block;
   margin-right: 12px;
+  font-size: 16px;
 }
 
 .work_time{
@@ -89,6 +104,7 @@ a{
 .crumbs li{
   display: inline-block;
   margin-right: 3px;
+  font-size: 16px;
 }
 
 .catalog{
@@ -188,7 +204,7 @@ a{
   padding-right: 0;
 }
 
-.glacy_shop{
+.shop_info{
   margin-bottom: 40px;
   padding-top: 20px;
   padding-left: 24px;
@@ -197,17 +213,21 @@ a{
   color: #323232;
 }
 
-.glacy_shop_item{
-  float: left;
-  box-sizing: border-box;
-  margin: 0 0 23px;
-  padding-left: 58px;
-  padding-right: 15px;
-  width: 50%;
+.shop_info_head{
+  font-size: 24px;
 }
 
-.glacy_shop_item:nth-child(2n) {
-  padding-left: 52px;
+.shop_info_list{
+  margin-left: -20px;
+}
+.shop_info_item{
+  display:inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  width: 450px;
+  margin-left: 20px;
+  padding-left: 47px;
+  margin-bottom: 20px;
 }
 
 
@@ -225,6 +245,7 @@ a{
   font-size: 24px;
   color: #323232;
 }
+
 .map{
   box-sizing: border-box;
   margin-top: 40px;
@@ -233,35 +254,9 @@ a{
   background: url(../img/map.jpg);
 }
 
-.footer_info{
-  padding-top: 35px;
-} 
-
-.footer_social{
-  float: left;
-  width: 380px;
-  margin: 0 16px 0 0;
-}
-
-.footer_contacts{
-  float: left;
-  padding-top: 5px;
-  width: 420px;
-}
-
-.footer_cr{
-  float: right;
-  padding-top: 30px;
-  min-width: 190px;
-}
-
 .filter{
   padding-top: 5px;
   min-height:  75px;
-}
-
-.contain h1{
-  font-size: 35px;
 }
 
 .annons{
@@ -324,6 +319,49 @@ a{
 .frm_btn{
   display: inline-block;
 }
+
+
+.footer_info{
+  padding-top: 35px;
+} 
+
+.footer_social{
+  float: left;
+  width: 380px;
+  margin: 0 16px 0 0;
+}
+
+.footer_contacts{
+  float: left;
+  padding-top: 5px;
+  width: 330px;
+}
+
+.footer_cr{
+  float: right;
+  padding-top: 30px;
+  min-width: 190px;
+}
+
+.cont_btn{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-size: 13px;
+  line-height: 22px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.social_btn{
+  display: inline-block;
+  margin-right: 3px;
+  vertical-align: middle;
+  font-size: 13px;
+}
+
 
 .filter_button{
   margin-top: 25px;
