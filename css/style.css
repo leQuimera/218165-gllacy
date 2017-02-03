@@ -1,9 +1,9 @@
 @font-face {
   font-family: "roboto";
   src:
-      local("Roboto Regular"),
-      local("Roboto-Regular"),
-      url("fonts/roboto.woff") format("woff");
+  local("Roboto Regular"),
+  local("Roboto-Regular"),
+  url("../fonts/roboto.woff2") format("woff2");
 }
 
 
@@ -20,15 +20,6 @@ body {
   color: #ffffff;
   font-weight: normal;
   background-color:  #849d8f;
-}
-
-a{
-  color: #ffffff;
-  text-decoration: none;
-}
-
-h1{
-  font-size: 35px;
 }
 
 .clearfix::after {
@@ -55,35 +46,39 @@ h1{
   height: 64px;
 }
 
+.top_in_line a{
+  color: #ffffff;
+  text-decoration: none;
+}
 .top_menu{
-    float: left;
-    margin-left: 10px;
-    max-width: 650px;
+  float: left;
+  margin-left: 10px;
+  max-width: 650px;
 }
 
-/*=============================================*/
+/*============================================*/
 /*================ Навигация ==================*/
-/*=============================================*/
+/*============================================*/
 .nav_menu,
 .sub_nav_menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
 }
 
 .nav_menu_item {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 5px;
-    font-size: 16px;
-    line-height: 20px;
-    vertical-align: top;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: top;
 }
 
 .nav_menu_item a {
-    display: block;
-    padding: 20px 14px;
+  display: block;
+  padding: 20px 14px;
 }
 
 .nav_menu_item span{
@@ -94,10 +89,10 @@ h1{
   border-bottom: none;
 }
 
-.nav_menu_item:hover > a {
+.nav_menu_item:hover  > a {
   margin-top: 15px;
   margin-bottom: 15px;
-  padding: 5px 15px;
+  padding: 5px 14px;
   border-radius: 16px;
   background-color: #ffffff;
   color: #333333;
@@ -125,13 +120,14 @@ h1{
   margin: 0;
   padding: 0;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 16px;
 }
 
 .sub_nav_menu a {
   margin: 0;
   padding: 10px 20px;
   color: #343434;
+  text-decoration: none;
 }
 
 .nav_menu_item:hover .sub_nav_menu {
@@ -141,13 +137,14 @@ h1{
 
 .sub_nav_menu li:first-child{
   font-weight: bold;
-  /*==== Тут должна быть декоративная черточка ===*/
- } 
+  /*==== Тут должна быть декоративная черточка  снизу===*/
+} 
 
 .sub_nav_menu li:hover > a {
   background-color: #fbded7;
- /*==== У крайних пунктов меню меняются уголки. Как их скруглить? ===*/ 
+  /*==== У крайних пунктов меню меняются уголки. Как их скруглить? ===*/ 
 }
+
 
 /*=======================================*/
 /*===== Пользовательские приблуды =======*/
@@ -165,22 +162,277 @@ h1{
   font-size: 0;
 }
 
-.user_menu > li {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 5px;
-    font-size: 16px;
-    line-height: 20px;
-    vertical-align: top;
-  }
-.user_menu a {
-    display: block;
-    padding: 20px 14px;
+.user_menu  li {
+  display: inline-block;
+  margin-left: 10px;
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: top;
 }
 
-.user_menu .top_search_btn{
-    background-color: #a1b4a9;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    border-radius: 16px;
+.menu_button a{
+  display: block;
+   padding:  8px 9px 8px 46px;
+   background-color: #9db1a5;
+  border-radius: 16px;
+}
+
+/*=======================================*/
+/*=============SUBMENU ================*/
+/*=======================================*/
+
+.work_time {
+  float:  right;
+  text-align: right;
+  margin-top:  -4px;
+  padding: 0;
+}
+
+.work_houre{
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.work_tel{
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+/*======================================*/
+
+
+.vidget_text{
+  margin-bottom: 40px;
+  padding-top: 215px;
+  text-align: center;
+  min-height: 280px;
+}
+
+.vidget_text p{
+  margin-bottom: 30px;
+  font-size: 60px;
+  line-height: 63px;
+  font-weight: bold;
+}
+
+.vidget_text a{
+  display: inline;
+  padding-top: 1px;
+  font-size: 32px;
+  color: #ffffff;
+  text-decoration: none;
+ }
+
+.widget_nav{
+  bottom: 23px;
+  left: 0;
+}
+ 
+ .banner_btn{
+  width: 280px;
+ }
+
+.red_btn { 
+ display: inline-block;
+ padding:  11px 42px;
+ background-color: #f06441;
+border-radius: 100px;
+color: #ffffff;
+font-size: 31px;
+line-height: 41px;
+vertical-align: middle;
+text-decoration: none;
+}
+
+.bannered{
+  margin-bottom: 20px;
+}
+
+.banner{
+  padding: 0 20px 0;
+  width: 520px;
+  border-radius: 15px;
+}
+
+.b_left{
+  float: left;
+  background-color: #60031c;
+  min-height: 220px;
+}
+
+.b_right{
+  float: right;
+  background-color: #0c0300;
+  min-height: 220px;
+}
+
+.b_news{
+  float: left;
+  background-color: #ffffff;
+  color: #323232;
+  padding-top: 23px;
+  min-height: 170px;
+}
+
+.b_send{
+  float: right;
+  background-color: #ffffff;
+  color: #323232;
+  min-height: 193px;
+}
+
+.ad{
+  font-size: 18px;
+}
+
+.ad h2{
+  font-size: 35px;
+  line-height: 20px;
+}
+
+.gallery{
+  margin-bottom: 38px;
+}
+
+.gallery_product{
+  border-radius: 50%;
+}
+.gallery_item{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding: 5px 5px 0;
+  width: 267px;
+}
+
+.gallery_item:nth-child(4n){
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.shop_info{
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-left: 24px;
+  background-color: #ebdec2;
+  width: 1100px;
+  color: #323232;
+}
+
+.shop_info_head{
+  font-size: 24px;
+}
+
+.shop_info_list{
+  margin-left: -20px;
+}
+.shop_info_item{
+  display:inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  width: 450px;
+  margin-left: 20px;
+  padding-left: 47px;
+  margin-bottom: 20px;
+}
+
+
+.gallery_desc{
+  margin-top: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.b_news h2{
+  font-size: 16px;
+}
+
+.b_news a{
+  font-size: 24px;
+  color: #323232;
+}
+
+.map{
+  box-sizing: border-box;
+  margin-top: 40px;
+  min-height: 430px;
+  background: url(../img/map.jpg);
+}
+
+
+
+
+
+
+/*======================================*/
+/*=============== Футер =================*/
+/*======================================*/
+
+
+.footer_info{
+  padding-top: 35px;
+} 
+
+.social_btn a,
+.cont_btn a,
+.footer_cr a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cont_btn span,
+.footer_cr span{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer_contacts_btn,
+.footer_social_btn{
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.footer_social{
+  float: left;
+  width: 380px;
+  margin: 0 16px 0 0;
+}
+
+.footer_contacts{
+  float: left;
+  padding-top: 5px;
+  width: 330px;
+}
+
+.footer_cr{
+  float: right;
+  padding-top: 30px;
+  min-width: 190px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.cont_btn{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-size: 13px;
+  line-height: 22px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.social_btn{
+  display: inline-block;
+  margin-right: 3px;
+  vertical-align: middle;
+  font-size: 13px;
+  line-height: 18px;
 }
