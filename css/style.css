@@ -50,10 +50,15 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
+
 .top_menu{
   float: left;
   margin-left: 10px;
   max-width: 650px;
+}
+
+.catalog h1{
+  font-size: 35px;
 }
 
 /*============================================*/
@@ -172,9 +177,9 @@ body {
 }
 
 .menu_button a{
-  display: block;
-   padding:  8px 9px 8px 46px;
-   background-color: #9db1a5;
+ display: block;
+ padding:  8px 9px 8px 46px;
+ background-color: #9db1a5;
   border-radius: 16px;
 }
 
@@ -183,7 +188,7 @@ body {
 /*=======================================*/
 
 .work_time {
-  float:  right;
+  float: right;
   text-align: right;
   margin-top:  -4px;
   padding: 0;
@@ -200,8 +205,46 @@ body {
   font-weight: bold;
 }
 
-/*======================================*/
 
+/*======================================*/
+/*=============   Крошки      ================*/
+/*=======================================*/
+
+
+.crumbs{
+  float: left;
+  margin-top: 15px;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.crumbs ul{
+  padding-left: 0px;
+}
+
+.crumbs li{
+   color: #ffffff;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 3px;
+ }
+
+.crumbs a{
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.crumbs li:last-child{
+  border-bottom: none;
+}
+
+/*======================================*/
+/*=========Всякие беннерообразные========*/
+/*=============    хрени      ================*/
+/*=======================================*/
 
 .vidget_text{
   margin-bottom: 40px;
@@ -225,11 +268,6 @@ body {
   text-decoration: none;
  }
 
-.widget_nav{
-  bottom: 23px;
-  left: 0;
-}
- 
  .banner_btn{
   width: 280px;
  }
@@ -246,12 +284,27 @@ vertical-align: middle;
 text-decoration: none;
 }
 
+.ad_btn{
+  float: right;
+  padding:  4px 20px;
+  margin-bottom: 15px;
+}
+
+.ad_btn a{
+  display: block;
+  float: right;
+  padding:  0;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .bannered{
   margin-bottom: 20px;
 }
 
 .banner{
-  padding: 0 20px 0;
+  padding: 15px 20px;
   width: 520px;
   border-radius: 15px;
 }
@@ -259,14 +312,12 @@ text-decoration: none;
 .b_left{
   float: left;
   background-color: #60031c;
-  min-height: 220px;
-}
+  }
 
 .b_right{
   float: right;
   background-color: #0c0300;
-  min-height: 220px;
-}
+ }
 
 .b_news{
   float: left;
@@ -285,66 +336,21 @@ text-decoration: none;
 
 .ad{
   font-size: 18px;
+  font-weight: bold;
 }
 
-.ad h2{
+.ad_header {
   font-size: 35px;
-  line-height: 20px;
+  font-weight: 700;
+  line-height: 35px;
 }
 
-.gallery{
-  margin-bottom: 38px;
-}
-
-.gallery_product{
-  border-radius: 50%;
-}
-.gallery_item{
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 15px;
-  margin-right: 10px;
-  padding: 5px 5px 0;
-  width: 267px;
-}
-
-.gallery_item:nth-child(4n){
-  margin-right: 0;
-  padding-right: 0;
-}
-
-.shop_info{
-  margin-bottom: 40px;
-  padding-top: 20px;
-  padding-left: 24px;
-  background-color: #ebdec2;
-  width: 1100px;
-  color: #323232;
-}
-
-.shop_info_head{
-  font-size: 24px;
-}
-
-.shop_info_list{
-  margin-left: -20px;
-}
-.shop_info_item{
-  display:inline-block;
-  vertical-align: top;
-  font-size: 16px;
-  width: 450px;
-  margin-left: 20px;
-  padding-left: 47px;
-  margin-bottom: 20px;
-}
-
-
-.gallery_desc{
-  margin-top: 12px;
-  margin-bottom: 10px;
-  text-align: center;
+.ad_text{
+display: block;
+margin: 20px 0 40px;
+font-size: 18px;
+vertical-align: top;
+line-height: 22px;
 }
 
 .b_news h2{
@@ -356,16 +362,128 @@ text-decoration: none;
   color: #323232;
 }
 
+.shop_info{
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-left: 17px;
+  padding: 15px 17px;
+  background-color: #ebdec2;
+  width: 1100px;
+  color: #323232;
+}
+
+.shop_info_head{
+  padding-top: 8px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.shop_info_list{
+  margin-top: 20px;
+  margin-left: -70px;
+  margin-bottom: 0;
+}
+
+.shop_info_item{
+  display:inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  width: 478px;
+  margin-left: 70px;
+  padding-left: 15px;
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+.form_button{
+ display: block;
+ float: right;
+ padding: 10px 5px;
+  margin-right:  15px;
+  background-color: #f06441;
+  border-radius: 100px;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  border:  none;
+}
+
+.contact_email{
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 365px;
+    height:  42px;
+}
+
+/*=======================================*/
+/*============= ГАЛЛЕРЕЯ ===============*/
+/*=======================================*/
+
+
+.gallery{
+  margin-bottom: 32px;
+  text-align: left;
+  font-size:  0;
+  line-height: 0;
+ }
+
+.gallery_ul{
+  margin-left: -26px;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+ }
+
+.gallery_product{
+  border-radius: 50%;
+}
+
+.gallery_item{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+  margin-left: 26px;
+  width: 267px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+ }
+
+.gallery_desc{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.gallery_price{
+    position: absolute;
+    bottom: 50px;
+    font-size: 45px;
+}
+
+.gallery_price span{
+  font-size: 30px;
+}
+
+.gallery_desc a{
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
 .map{
   box-sizing: border-box;
   margin-top: 40px;
   min-height: 430px;
   background: url(../img/map.jpg);
 }
-
-
-
-
 
 
 /*======================================*/
@@ -435,4 +553,84 @@ text-decoration: none;
   vertical-align: middle;
   font-size: 13px;
   line-height: 18px;
+}
+
+
+/*======================================*/
+/*========== Сортировщик ===============*/
+/*======================================*/
+
+.filter{
+  padding-top: 5px;
+  font-size:  0;
+  line-height: 0;
+  width:  860px;
+  margin-left: -10px;
+ }
+
+.filter_ul{
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+ }
+
+.filter_item{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 22px;
+ }
+
+.filter_view{
+  height: 34px;
+  padding: 0 10px;
+  background: #a9bab0;
+  border-radius: 17px;
+  white-space: nowrap;
+}
+
+.ice_select{
+ display: inline-block;
+ min-width: 194px;
+}
+
+.ice_type{
+  height: 35px;
+  line-height: 35px;
+  background: #a6b8ae;
+  border-style: none;
+}
+
+.ice_price{
+  display: inline-block;
+  min-width:  220px;
+}
+
+.fatness,
+.fatness_change,
+.filler_check,
+.frm_btn{
+  display: inline-block;
+}
+
+.annons{
+  margin-bottom: 7px;
+  padding: 0 0 0 16px;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.switch_button{
+  float: right;
+  margin-left: 20px;
+}
+
+.switch_button a{
+  color: #ffffff;
+  text-decoration: none;
 }
