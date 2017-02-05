@@ -1,0 +1,119 @@
+.sprite {
+    background-image: url();
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-_________-1 {
+    width: 33px;
+    height: 33px;
+    background-position: -10px -10px;
+}
+
+.sprite-_________-2 {
+    width: 33px;
+    height: 33px;
+    background-position: -10px -63px;
+}
+
+.sprite-ico_bask {
+    width: 21px;
+    height: 20px;
+    background-position: -10px -116px;
+}
+
+.sprite-ico_bask_on {
+    width: 21px;
+    height: 20px;
+    background-position: -10px -156px;
+}
+
+.sprite-ico_cow {
+    width: 48px;
+    height: 49px;
+    background-position: -10px -196px;
+}
+
+.sprite-ico_enter {
+    width: 21px;
+    height: 19px;
+    background-position: -10px -265px;
+}
+
+.sprite-ico_enter_on {
+    width: 21px;
+    height: 19px;
+    background-position: -10px -304px;
+}
+
+.sprite-ico_fb {
+    width: 38px;
+    height: 38px;
+    background-position: -10px -343px;
+}
+
+.sprite-ico_heart {
+    width: 15px;
+    height: 13px;
+    background-position: -10px -401px;
+}
+
+.sprite-ico_hits {
+    width: 61px;
+    height: 61px;
+    background-position: -10px -434px;
+}
+
+.sprite-ico_ice {
+    width: 49px;
+    height: 49px;
+    background-position: -10px -515px;
+}
+
+.sprite-ico_insta {
+    width: 38px;
+    height: 38px;
+    background-position: -10px -584px;
+}
+
+.sprite-ico_lens {
+    width: 33px;
+    height: 33px;
+    background-position: -10px -642px;
+}
+
+.sprite-ico_lens_on {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -695px;
+}
+
+.sprite-ico_list {
+    width: 49px;
+    height: 49px;
+    background-position: -10px -732px;
+}
+
+.sprite-ico_search {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -801px;
+}
+
+.sprite-ico_term {
+    width: 48px;
+    height: 49px;
+    background-position: -10px -838px;
+}
+
+.sprite-ico_tw {
+    width: 38px;
+    height: 38px;
+    background-position: -10px -907px;
+}
+
+.sprite-ico_vk {
+    width: 38px;
+    height: 38px;
+    background-position: -10px -965px;
+}
