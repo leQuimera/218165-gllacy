@@ -16,7 +16,7 @@ body {
 body {
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   color: #ffffff;
   font-weight: normal;
   background-color:  #849d8f;
@@ -84,23 +84,39 @@ body {
 .nav_menu_item a {
   display: block;
   padding: 20px 14px;
-}
+ }
 
 .nav_menu_item span{
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.nav_menu_item:hover span{
+.active{
+  background-color: #d07058;
+}
+
+.nav_menu_item > .active {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px 14px;
+  border-radius: 16px;
+  background-color: #d07058;
+  color: #ffffff;
   border-bottom: none;
 }
 
-.nav_menu_item:hover  > a {
+
+.nav_menu_item:hover > a {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 5px 14px;
   border-radius: 16px;
   background-color: #ffffff;
   color: #333333;
+  border-bottom: none;
+}
+
+.nav_menu_item:active > a{
+  box-shadow: inset 0 2px 1px #696969;
 }
 
 .sub_nav_menu {
@@ -143,14 +159,15 @@ body {
 
 .sub_nav_menu li:first-child{
   font-weight: bold;
-  /*==== Тут должна быть декоративная черточка  снизу===*/
 } 
 
 .sub_nav_menu li:hover > a {
   background-color: #fbded7;
-  /*==== У крайних пунктов меню меняются уголки. Как их скруглить? ===*/ 
-}
+ }
 
+.sub_nav_menu li:active > a {
+  background-color: #f6b5a5;
+}
 
 /*=======================================*/
 /*===== Пользовательские приблуды =======*/
@@ -179,11 +196,96 @@ body {
 
 .menu_button a{
  display: block;
- padding:  8px 9px 8px 46px;
+ padding:  8px 9px 9px 45px;
  background-color: #9db1a5;
-  border-radius: 16px;
+ border-radius: 16px;
+ min-height: 16px;
 }
 
+.menu_button {
+  position: relative;
+}
+
+.btn_enter a{
+  padding-left: 46px;
+  padding-top: 4px;
+  padding-right:  16px;
+  line-height: 19px;
+}
+
+.btn_search a{
+  padding-left: 25px;
+  margin-right: -5px;
+}
+
+.btn_bask a{
+   padding-right: 34px;
+}
+
+.btn_search::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    width: 20px;
+    height: 19px;
+    background-image: url(../img/ico_lens_on.png);
+    background-repeat: no-repeat;
+}
+
+.btn_enter::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 17px;
+    width: 20px;
+    height: 19px;
+    background-image: url(../img/ico_enter.png);
+    background-repeat: no-repeat;
+}
+
+.btn_bask::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 15px;
+    width: 20px;
+    height: 19px;
+    background-image: url(../img/ico_bask.png);
+    background-repeat: no-repeat;
+}
+
+
+/*=======================================*/
+/*=========== Выпадающие окна ===========*/
+/*=======================================*/
+
+.win_lock{
+  position: absolute;
+  padding: 15px;
+  background-color: #f8f7f4;
+  color: #323232;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.top_search{
+  top: 55px;
+  right: 0;
+  padding: 22px 15px;
+}
+
+.input_search input[type="text"]{
+  display: block;
+  width: 240px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  color: #999999;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
 /*=======================================*/
 /*=============SUBMENU ================*/
 /*=======================================*/
