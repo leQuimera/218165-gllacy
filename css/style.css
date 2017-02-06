@@ -227,10 +227,14 @@ body {
     position: absolute;
     top: 21px;
     left: 10px;
-    width: 20px;
+    width: 20px; 
     height: 19px;
-    background-image: url(../img/ico_lens_on.png);
+   background-image: url(../img/ico_lens.png);
     background-repeat: no-repeat;
+}
+
+..btn_search:hover .win_lock{
+display: block;
 }
 
 .btn_enter::before {
@@ -261,6 +265,7 @@ body {
 /*=======================================*/
 
 .win_lock{
+  display: none;
   position: absolute;
   padding: 15px;
   background-color: #f8f7f4;
@@ -276,16 +281,18 @@ body {
   padding: 22px 15px;
 }
 
-.input_search input[type="text"]{
-  display: block;
+.input_search input[type="search"]{
   width: 240px;
   box-sizing: border-box;
   padding: 5px 15px;
-  color: #999999;
+  color: #000000;
   font-size: 14px;
   border: 1px solid #cccccc;
   border-radius: 5px;
 }
+
+
+
 /*=======================================*/
 /*=============SUBMENU ================*/
 /*=======================================*/

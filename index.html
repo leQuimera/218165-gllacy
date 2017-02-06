@@ -30,22 +30,30 @@
 				
 				<div class="top_user_block">
 					<ul class="user_menu">
-						<li class="menu_button btn_search"><a href="#"></a>
+						<li class="menu_button btn_search"><a href="#"><!--img src="img/ico_lens.png" width="20" height="19" border="0"--></a>
 							<div class="win_lock top_search">
 								<form action="https://echo.htmlacademy.ru" method="post">
 									<div class="input_search">
-										<input class="field field_search" type="text" name="search_inquiry" required>
+										<input class="field field_search" type="text" name="search_inquiry" placeholder="Что ищем?">
 										<label class="placeholder" data-placeholder="Что ищем?"></label>
 									</div>
 								</form>
 							</div>
 						</li>
 						<li class="menu_button btn_enter"><a href="#">Вход</a></li>
-						<li class="menu_button btn_bask"><a href="#">Пусто</a></li>
-					</ul>
+						<div class="win_lock top_enter">
+							<form action="https://echo.htmlacademy.ru" method="post">
+								<input class="field field-email" type="text" name="e-mail" placeholder="E-MAIL" required >
+								<input class="field field-password" type="password" name="password" placeholder="Пароль" required>
+								<button class="red-btn login-btn" type="submit">Войти</button>
+								<a href="#" class="forget"><span>Забыли пароль?</span></a>
+								<a href="#" class="registration"><span>Новая регистрация</span></a>
+							</div>
+							<li class="menu_button btn_bask"><a href="#">Пусто</a></li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</header>
-	</div>
-</body>
-</html>
+			</header>
+		</div>
+	</body>
+	</html>
