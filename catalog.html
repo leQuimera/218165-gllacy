@@ -64,7 +64,7 @@
 
 						</li>
 						<li class="menu_button btn_bask">
-							<a href="#" class="top_btn top_bask">2 товара</a>
+							<a href="#" class="top_bask bask_full">2 товара</a>
 						</li>
 					</ul>
 				</div>
@@ -98,16 +98,21 @@
 						<li class="filter_item">
 							<div class="ice_select">
 								<span class="annons">Сортировка:</span>
-								<div class="filter_view">
-
+								<div class="filter_sort ">
+									<select>
+                								<option value="popularity" selected>по популярности</option>
+                								<option value="low_cost">сначала недорогие</option>
+                								<option value="high_cost">сначала дорогие</option>
+                								<option value="fat">по жирности</option>
+              							</select>
 								</div>
 							</div>
 						</li>
 						<li  class="filter_item">
 							<div class="ice_price">
-								<span  class="annons">Цена:</span><label for="min_price">100 руб.</label><span> - </span><label for="max_price">500 руб.</label>
+								<span  class="annons">Цена: 100 руб. - 500 руб.</span>
 								<div class="filter_view">
-
+              							
 								</div>
 							</div>
 						</li>
@@ -161,12 +166,10 @@
 								</div>
 							</div>
 						</li>
-						<li class="filter_item">
-							<div class="frm_btn">
-								<button class="filter_button">Применить</button>
-							</div>
-						</li>
 					</ul>
+					<div class="frm_btn">
+						<button class="filter_view filter_button">Применить</button>
+					</div>
 				</form>
 			</div>
 
@@ -319,13 +322,13 @@
 				</ul>
 			</div>
 			<div class="switch_button">
-				<a class="prev disabled" href="#prev">Назад</a>
+				<a class="switch_button disabled" href="#prev"> &#8249; </a>
 				<a href="#1">1</a>
 				<a class="current" href="#2">2</a>
 				<a href="#3">3</a>
 				<a href="#3">4</a>
 				<a href="#3">5</a>
-				<a class="next" href="#next">Вперёд</a>
+				<a class="switch_buttont" href="#next"> &#8250; </a>
 			</div>
 		</main>
 		<footer class="footer_contain">

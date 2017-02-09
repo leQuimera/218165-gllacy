@@ -58,8 +58,12 @@ body {
 }
 
 .catalog h1{
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding: 0;
   font-size: 35px;
-  line-height: 42px;
+  line-height: 45px;
+  font-weight: 700;
 }
 
 /*============================================*/
@@ -264,8 +268,26 @@ body {
   background-repeat: no-repeat;
 }
 
-.top_bask:hover::before{
+.top_btn .top_bask:hover::before{
   background-image: url(../img/ico_bask_bl.png);
+}
+
+.bask_full{
+  display: block;
+  padding:  8px 9px 9px 42px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  min-height: 16px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.btn_bask .bask_full{
+  color:#000000;
+}
+
+.bask_full::before{
+  background-image: url(../img/ico_bask_on.png);
 }
 
 /*=======================================*/
@@ -529,11 +551,11 @@ body {
   background: #ffffff;
   padding: 12px 0 23px 17px;
   min-height: 160px;
- }
+}
 
- .send_form{
+.send_form{
   margin: 26px 0 10px;
- }
+}
 
 .ad{
   font-size: 18px;
@@ -775,60 +797,110 @@ body {
 
 .filter_item{
   display: inline-block;
-  vertical-align: top;
-  margin-top: 15px;
-  margin-left: 10px;
+  padding-top: 15px;
+  padding-left: 10px;
   text-align: left;
+  vertical-align: top;
   font-size: 16px;
   line-height: 22px;
 }
 
 .filter_view{
-   height: 34px;
-  padding: 0 10px;
+  height: 34px;
+  padding:  0px 10px;
   background: #a9bab0;
   border-radius: 17px;
   white-space: nowrap;
 }
 
-.ice_select{
- display: inline-block;
- min-width: 194px;
+.annons{
+  display: block;
+  padding: 0 0 10px 16px;
+  line-height: 18px;
+  font-size: 14px;
+  color: #ffffff;
 }
 
-.ice_type{
-  height: 35px;
-  line-height: 35px;
-  background: #a6b8ae;
-  border-style: none;
+.filter_sort{
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  padding-right: 30px;
+  width: 162px;
+  height: 34px;
+  background-color: #a9bab0;
+  color: #ffffff;
+  border-radius: 17px;
+}
+
+.filter_sort select{
+ width: 190px;
+ padding-left: 11px;
+ background: transparent;
+ background: rgba(0, 0, 0, 0);
+ color: #ffffff;
+ height: 35px;
+ font-size: 16px;
+ line-height: 35px;
+ outline: 0;
+}
+
+.filter_sort option{
+  color: #000000;
 }
 
 .ice_price{
-  display: inline-block;
-  min-width:  220px;
+  min-width: 220px;
 }
 
-.fatness,
+.fatness{
+  max-width: 410px;
+}
+
 .fatness_change,
-.filler_check,
-.frm_btn{
+.filler_check{
   display: inline-block;
+  padding-top: 5px;
 }
 
-.annons{
-  margin-bottom: 7px;
-  padding: 0 0 0 16px;
-  line-height: 18px;
-  font-size: 14px;
+.filter_button{
+    margin-top: 25px;
+    margin-right: 0;
+    font-size: 16px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding-left: 29px;
+    padding-right: 27px;
 }
+
+
+/*======================================*/
+/*======= Кнопки навигации ===============*/
+/*======================================*/
 
 .switch_button{
-  float: right;
+    float: right;
+    margin-bottom: 10px;
+    font-size: 0;
 }
 
 .switch_button a{
-  color: #ffffff;
-  text-decoration: none;
+   display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding-left: 3px;
+    font-size: 16px;
+    line-height: 25px;
+    vertical-align: top;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.switch_button .current{
+    color: #000000;
+    background-color: #ffffff;
 }
 
 
@@ -902,7 +974,7 @@ body {
   text-decoration: none;
   margin-left: 10px;
   margin-bottom: 10px;
-  width: 170px;
+  width: 165px;
 }
 
 .footer_social_btn li{
@@ -911,7 +983,7 @@ body {
 
 .social_btn{
   display: block;
-   margin-right: 3px;
+  margin-right: 3px;
   width: 38px;
   height: 38px;
   font-size: 0;
@@ -936,16 +1008,16 @@ body {
 }
 
 .btn_heart{
-position: relative;
+  position: relative;
 }
 
 .heart::before{
  content: "";
-  position: absolute;
-  top: 4px;
-  left: -17px;
-  width: 15px;
-  height: 13px;
-  background-image: url(../img/ico_heart.png);
-  background-repeat: no-repeat;
+ position: absolute;
+ top: 4px;
+ left: -17px;
+ width: 15px;
+ height: 13px;
+ background-image: url(../img/ico_heart.png);
+ background-repeat: no-repeat;
 }
