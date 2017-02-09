@@ -59,6 +59,7 @@ body {
 
 .catalog h1{
   font-size: 35px;
+  line-height: 42px;
 }
 
 /*============================================*/
@@ -72,18 +73,22 @@ body {
   font-size: 0;
 }
 
+.nav_menu{
+  padding-top: 17px; 
+}
+
 .nav_menu_item {
   position: relative;
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: 18px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .nav_menu_item a {
   display: block;
-  padding: 20px 14px;
+  padding: 5px 14px;
 }
 
 .nav_menu_item span{
@@ -95,8 +100,6 @@ body {
 }
 
 .nav_menu_item > .active {
-  margin-top: 15px;
-  margin-bottom: 15px;
   padding: 5px 14px;
   border-radius: 16px;
   background-color: #d07058;
@@ -106,10 +109,8 @@ body {
 }
 
 .nav_menu_item:hover > a {
-  margin-top: 15px;
-  margin-bottom: 15px;
   padding: 5px 14px;
-  border-radius: 16px;
+  border-radius: 16px; 
   background-color: #ffffff;
   color: #333333;
   border-bottom: none;
@@ -123,19 +124,14 @@ body {
   display: none;
   position: absolute;
   z-index: 10;
-  top: 52px;
+  top: 45px;
   left: -4px;
-  margin: 0;
-  padding: 0;
   width: 142px;
   border-radius: 5px;
   overflow:hidden;
+  text-align: left;
   background-color: #f8f7f4;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-}
-
-.sub_nav_menumenu ul {
-  list-style: none;
 }
 
 .sub_nav_menu li {
@@ -175,7 +171,6 @@ body {
 
 .top_user_block{
   float: right;
-  font-size: 0;
 }
 
 .user_menu{
@@ -186,9 +181,11 @@ body {
 }
 
 .menu_button{
+  position: relative;
   display: inline-block;
   margin-left: 10px;
   padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 14px;
   line-height: 16px;
   vertical-align: top;
@@ -213,6 +210,7 @@ body {
 .top_search{
   position: relative;
   text-indent: 100%;
+  width: 40px;
   white-space: nowrap;
   overflow: hidden;
   padding-left: 0;
@@ -267,10 +265,8 @@ body {
 }
 
 .top_bask:hover::before{
-  background-image: url(../img/ico_bask_on.png);
+  background-image: url(../img/ico_bask_bl.png);
 }
-
-
 
 /*=======================================*/
 /*=========== Выпадающие окна ===========*/
@@ -279,6 +275,8 @@ body {
 .win_look{
   display: none;
   position: absolute;
+  top: 57px;
+  right: 1px;
   padding: 20px;
   background-color: #f8f7f4;
   color: #323232;
@@ -343,7 +341,7 @@ body {
   text-decoration: none;
 }
 
-.class underline{
+.src_links span{
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -529,12 +527,13 @@ body {
 .b_post{
   border-radius: 15px;
   background: #ffffff;
-  padding: 12px 0 30px 17px;
-}
+  padding: 12px 0 23px 17px;
+  min-height: 160px;
+ }
 
-.b_post p{
-  padding-bottom: 20px;
-}
+ .send_form{
+  margin: 26px 0 10px;
+ }
 
 .ad{
   font-size: 18px;
@@ -563,7 +562,7 @@ body {
 }
 
 .news_body{
-  margin: 0 0 63px;
+  margin: 0;
   padding: 0;
   width: 300px;
 }
@@ -588,32 +587,37 @@ body {
   padding-top: 8px;
   font-size: 24px;
   line-height: 30px;
+  font-weight: bold;
 }
 
 .shop_info_list{
-  margin-top: 20px;
-  margin-left: -70px;
-  margin-bottom: 0;
+  margin: 20px 0 0 -30px;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
 }
 
 .shop_info_item{
   display:inline-block;
-  position: relative;
   vertical-align: top;
   font-size: 16px;
   width: 478px;
-  margin-left: 70px;
-  padding-left: 15px;
+  margin-left: 27px;
+  padding-left: 60px;
   margin-bottom: 22px;
   text-align: left;
 }
 
-.shop_info_item::before{
+.shop_info_item span{
+  position: relative;
+}
+
+.shop_info_item span::before {
   content: "";
   position: absolute;
   width: 48px;
   height: 48px;
-  left: -40px;
+  left: -55px;
   top: -12px;
 }
 
@@ -820,7 +824,6 @@ body {
 
 .switch_button{
   float: right;
-  margin-left: 20px;
 }
 
 .switch_button a{
@@ -867,7 +870,7 @@ body {
 .footer_contacts{
   float: left;
   padding-top: 5px;
-  width: 330px;
+  width: 370px;
 }
 
 .footer_cr{
@@ -899,7 +902,7 @@ body {
   text-decoration: none;
   margin-left: 10px;
   margin-bottom: 10px;
-  width: 150px;
+  width: 170px;
 }
 
 .footer_social_btn li{
