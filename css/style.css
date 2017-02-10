@@ -266,11 +266,7 @@ body {
   height: 19px;
   background-image: url(../img/ico_bask.png);
   background-repeat: no-repeat;
-}
-
-.top_btn .top_bask:hover::before{
-  background-image: url(../img/ico_bask_bl.png);
-}
+  }
 
 .bask_full{
   display: block;
@@ -286,9 +282,21 @@ body {
   color:#000000;
 }
 
-.bask_full::before{
+.bask_full::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 12px;
+  width: 20px;
+  height: 19px;
   background-image: url(../img/ico_bask_on.png);
+  background-repeat: no-repeat;
+  }
+
+.top_bask:hover::before{
+  background-image: url(../img/ico_bask_bl.png);
 }
+
 
 /*=======================================*/
 /*=========== Выпадающие окна ===========*/
@@ -371,6 +379,33 @@ body {
   display: block;
 }
 
+.win_check{
+  display: table;
+  min-width: 450px;
+}
+
+.win_check ul{
+  display: table-row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.win_check li{
+  display: table-cell;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  max-width: 185px;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #232323;
+}
+
+.win_check a{
+  color: #232323;
+  text-decoration: none;
+}
 
 /*=======================================*/
 /*=============SUBMENU ================*/
