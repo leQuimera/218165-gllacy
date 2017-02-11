@@ -17,7 +17,7 @@
 					<ul class="nav_menu">
 						<li class="nav_menu_item"><a href="#" class="active">Каталог</a>
 							<ul class="sub_nav_menu">
-								<li><a href="#" >Новинки</a></li>
+								<li><a href="#"  class="item_new">Новинки</a></li>
 								<li  class="active"><a href="catalog.html">Сливочное</a></li>
 								<li><a href="#">Щербеты</a></li>
 								<li><a href="#">Фруктовый лед</a></li>
@@ -65,19 +65,35 @@
 						</li>
 						<li class="menu_button btn_bask">
 							<a href="#" class="bask_full">2 товара</a>
-							<article class="win_look win_check">
-								<ul>
-									<li><img src="img/ice_basq1.png" width="33" height="33"></li>
-									<li><a href="#">Пломбир с апельсиновым джемом</a></li>
-									<li>1,5 кг х 200 руб.</li>
-									<li>300 руб.</li>
-								</ul>
-								<ul>
-									<li><img src="img/ice_basq2.png" width="33" height="33"></li>
-									<li><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></li>
-									<li>1,5 кг х 300 руб.</li>
-									<li>450 руб.</li>
-								</ul>
+							<article class="win_look win_check clearfix">
+								<div class="bask_row">
+									<ul>
+										<li class="col_close"> <button class="col_close_btn" type="button" title="Закрыть">Закрыть</button></li>
+										<li class="col_pic"><img src="img/ice_orange.jpg" width="33" height="33" class="gallery_product"></li>
+										<li class="col_descr"><a href="#">Пломбир с апельсиновым джемом</a></li>
+										<li class="col_netto">1,5 кг х 200 руб.</li>
+										<li class="col_price">300 руб.</li>
+									</ul>
+								</div>
+								<div class="bask_row">
+									<ul>
+										<li class="col_close"> <button class="col_close_btn" type="button" title="Закрыть">Закрыть</button></li>
+										<li class="col_pic col_bottom"><img src="img/ice_pink.jpg" width="33" height="33" class="gallery_product"></li>
+										<li class="col_descr col_bottom"><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></li>
+										<li class="col_netto col_bottom">1,5 кг х 300 руб.</li>
+										<li class="col_price col_bottom">450 руб.</li>
+									</ul>
+								</div>
+								<div class="bask_row_button">
+									<div  class="bask_result">
+										<div class="bask_sum">
+											Итого:  750руб.
+										</div>
+										<div class="bask_submit">
+											<a href="#" class="red_btn bask_btn" >Оформить заказ</a>
+										</div>
+									</div>								
+								</div>
 							</article>
 						</li>
 					</ul>
@@ -108,8 +124,8 @@
 					<h1>Сливочное мороженое</h1>
 				</div>
 				<form action="https://echo.htmlacademy.ru" method="post">
-					<ul class="filter_ul">
-						<li class="filter_item">
+					<div class="filter_inner">
+						<div class="filter_item">
 							<div class="ice_select">
 								<span class="annons">Сортировка:</span>
 								<div class="filter_sort ">
@@ -121,16 +137,16 @@
 									</select>
 								</div>
 							</div>
-						</li>
-						<li  class="filter_item">
+						</div>
+						<div  class="filter_item">
 							<div class="ice_price">
 								<span  class="annons">Цена: 100 руб. - 500 руб.</span>
 								<div class="filter_view">
 
 								</div>
 							</div>
-						</li>
-						<li  class="filter_item">
+						</div>
+						<div  class="filter_item">
 							<div class="fatness">
 								<span  class="annons">Жирность:</span>
 								<div class="filter_view">
@@ -152,8 +168,8 @@
 									</div>
 								</div>
 							</div>
-						</li>
-						<li  class="filter_item">
+						</div>
+						<div class="filter_item">
 							<div class="filler">
 								<span  class="annons">Наполнители:</span>
 								<div class="filter_view line_check">
@@ -179,10 +195,10 @@
 									</div>
 								</div>
 							</div>
-						</li>
-					</ul>
-					<div class="frm_btn">
-						<button class="filter_view filter_button">Применить</button>
+						</div>
+						<div class="filter_item">
+							<button class="filter_view filter_button">Применить</button>
+						</div>
 					</div>
 				</form>
 			</div>
@@ -335,14 +351,16 @@
 					</li>															
 				</ul>
 			</div>
-			<div class="switch_button">
-				<a class="switch_button disabled" href="#prev"> &#8249; </a>
-				<a href="#1">1</a>
-				<a class="current" href="#2">2</a>
-				<a href="#3">3</a>
-				<a href="#3">4</a>
-				<a href="#3">5</a>
-				<a class="switch_buttont" href="#next"> &#8250; </a>
+			<div class="switcher clearfix">
+				<div class="switch_button">
+					<a class="disabled" href="#prev"> &#8249; </a>
+					<a href="#1">1</a>
+					<a class="current" href="#2">2</a>
+					<a href="#3">3</a>
+					<a href="#3">4</a>
+					<a href="#3">5</a>
+					<a href="#next"> &#8250; </a>
+				</div>
 			</div>
 		</main>
 		<footer class="footer_contain">
@@ -360,6 +378,8 @@
 						<ul class="footer_contacts_btn">
 							<li class="cont_btn btn_heart"><a href="#" class="heart"><span>Для поставщиков</span></a></li>
 							<li class="cont_btn"><a href="#"><span>Наши документы</span></a></li>
+						</ul>
+						<ul class="footer_contacts_btn">
 							<li class="cont_btn"><a href="#"><span>О производстве</span></a></li>
 							<li class="cont_btn"><a href="#"><span>Экологические стандарты</span></a></li>
 						</ul>

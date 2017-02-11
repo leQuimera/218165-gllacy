@@ -30,7 +30,6 @@ body {
 
 .wrapped {
   padding-top: 10px;
-  padding-bottom: 30px;
   min-width: 1200px;
 }
 
@@ -40,10 +39,15 @@ body {
   width: 1146px;
 }
 
+.contain_main{
+  margin-bottom: 30px;
+}
+
 .pic_logo{
-  float: left;
+  display: inline-block;
   width: 154px;
   height: 64px;
+  vertical-align: top;
 }
 
 .top_in_line a{
@@ -52,9 +56,11 @@ body {
 }
 
 .top_menu{
-  float: left;
-  margin-left: 10px;
-  max-width: 650px;
+  display: inline-block;
+   max-width: 650px;
+   padding-left: 8px;
+   padding-top: 15px;
+   vertical-align: top;
 }
 
 .catalog h1{
@@ -75,10 +81,6 @@ body {
   padding: 0;
   list-style: none;
   font-size: 0;
-}
-
-.nav_menu{
-  padding-top: 17px; 
 }
 
 .nav_menu_item {
@@ -139,14 +141,11 @@ body {
 }
 
 .sub_nav_menu li {
-  margin: 0;
-  padding: 0;
   font-size: 14px;
   line-height: 16px;
 }
 
 .sub_nav_menu a {
-  margin: 0;
   padding: 10px 20px;
   color: #343434;
   text-decoration: none;
@@ -168,6 +167,21 @@ body {
 .sub_nav_menu li:active > a {
   background-color: #f6b5a5;
 }
+
+.item_new{
+  position: relative;
+}
+
+.item_new::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 1px;
+  background-color: #d1d0ce;
+}
+
 
 /*=======================================*/
 /*===== Пользовательские приблуды =======*/
@@ -221,9 +235,14 @@ body {
   padding-right: 0;
 }
 
-.top_enter,
+.top_enter{
+  position: relative;
+    padding-right: 15px;
+}
+
 .top_bask{
   position: relative;
+  padding-right: 32px;
 }
 
 .top_search::before {
@@ -303,7 +322,7 @@ body {
 /*=======================================*/
 
 .win_look{
-  display: none;
+ display: none;
   position: absolute;
   top: 57px;
   right: 1px;
@@ -375,29 +394,28 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.menu_button:hover .win_look{
+.menu_button:hover .win_look,
+.bask_full:hover .win_look{
   display: block;
 }
 
-.win_check{
-  display: table;
-  min-width: 450px;
-}
-
 .win_check ul{
-  display: table-row;
   margin: 0;
   padding: 0;
+  min-width: 510px;
   list-style: none;
   font-size: 0;
 }
 
+.bask_row{
+  margin-bottom: 20px;
+}
+
 .win_check li{
-  display: table-cell;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  max-width: 185px;
+  display: inline-block;
   vertical-align: middle;
+  padding-left:  10px;
+  height: 40px;
   font-size: 12px;
   color: #232323;
 }
@@ -407,15 +425,75 @@ body {
   text-decoration: none;
 }
 
+.col_close{
+  position: relative;
+  width: 25px;
+}
+
+.col_close_btn{
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.col_close_btn::before,
+.col_close_btn::after{
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 15px;
+    height: 2px;
+    background-color: #676767;
+}
+
+.col_close_btn::before{
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.col_close_btn::after{
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.col_descr{
+  width: 210px;
+}
+
+.bask_row_button{
+  border-bottom: 1px solid #cacac7;
+}
+
+.bask_result{
+  float: right;
+}
+
+.bask_sum{
+  text-align: right;
+  padding: 25px 5px;
+}
+
+.bask_submit a{
+  color: #ffffff;
+}
+
 /*=======================================*/
 /*=============SUBMENU ================*/
 /*=======================================*/
+.submenu{
+ margin-bottom: 10px;
+}
 
 .work_time {
   float: right;
   text-align: right;
-  margin-top:  -4px;
-  padding: 0 0 10px 0;
+  margin-top:  -5px;
 }
 
 .work_houre{
@@ -465,42 +543,17 @@ body {
   border-bottom: none;
 }
 
+
 /*======================================*/
-/*=========Всякие беннерообразные========*/
-/*=============    хрени      ================*/
+/*==============   Кнопки   ===============*/
 /*=======================================*/
-
-.vidget_text{
-  margin-bottom: 40px;
-  padding-top: 215px;
-  text-align: center;
-  min-height: 280px;
-}
-
-.vidget_text p{
-  margin-bottom: 30px;
-  font-size: 60px;
-  line-height: 63px;
-  font-weight: bold;
-}
-
-.vidget_text a{
-  display: inline;
-  padding-top: 1px;
-  font-size: 32px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.banner_btn{
-  width: 280px;
-}
 
 .red_btn { 
  display: inline-block;
  padding:  11px 42px;
  background-color: #f06441;
  border-radius: 100px;
+ background: linear-gradient(to bottom,#f26843 0%,#e74b36 100%);
  color: #ffffff;
  font-size: 31px;
  line-height: 41px;
@@ -509,6 +562,20 @@ body {
  vertical-align: middle;
  text-decoration: none;
  border: none;
+}
+
+.red_btn:hover{
+background-color: #f17d65;
+background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+box-shadow: 0 2px 2px rgba(172,16,0, 1);
+outline: none;
+}
+
+.red_btn:active{
+  background-color: #dc5539;
+  background: linear-gradient(to bottom, #d74632 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+  outline: none;
 }
 
 .login_btn{
@@ -522,7 +589,6 @@ body {
 .ad_btn{
   float: right;
   padding:  4px 20px;
-  margin-bottom: 15px;
 }
 
 .ad_btn a{
@@ -543,8 +609,59 @@ body {
   text-shadow: 0px 1px 2px rgba(172, 16, 0, 1);
 }
 
+.bask_btn{
+  padding: 5px 10px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+/*======================================*/
+/*=============   Виджет    ================*/
+/*=======================================*/
+
+.vidget{
+  position: relative;
+  padding-top: 270px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.vidget_text{
+  width: 700px;
+  margin:  0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.vidget_descr{
+  margin:  0 auto;
+  margin-bottom: 24px;
+  font-size: 60px;
+  line-height: 63px;
+ font-weight: 800;
+}
+
+.vidget_text a{
+  display: inline;
+  padding-top: 1px;
+  font-size: 32px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/*======================================*/
+/*=========Всякие беннерообразные========*/
+/*=============    хрени      ================*/
+/*=======================================*/
+
+.banner_btn{
+  width: 280px;
+}
+
 .bannered{
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .banner{
@@ -555,11 +672,13 @@ body {
 
 .b_left{
   float: left;
+  padding-bottom: 30px;
   background: #60031c url(../img/raspberry.jpg) center center;
 }
 
 .b_right{
   float: right;
+  padding-bottom: 30px;
   background: #0c0300 url(../img/chocolate.jpg) center center; 
 }
 
@@ -568,7 +687,7 @@ body {
   background: #ffffff url(../img/fon_news.jpg);
   color: #323232;
   padding-top: 23px;
-  min-height: 170px;
+  min-height: 180px;
 }
 
 .b_send{
@@ -578,18 +697,22 @@ body {
   background-color: #ffffff;
   background-image: url(../img/fon_post.jpg);
   color: #323232;
-  min-height: 193px;
 }
 
 .b_post{
   border-radius: 15px;
   background: #ffffff;
   padding: 12px 0 23px 17px;
-  min-height: 160px;
+  min-height: 173px;
+}
+
+.post_body{
+  padding: 15px 10px;
+  margin-bottom: 20px;
 }
 
 .send_form{
-  margin: 26px 0 10px;
+  margin-bottom: 10px;
 }
 
 .ad{
@@ -632,16 +755,14 @@ body {
 
 .shop_info{
   margin-bottom: 40px;
-  padding-top: 20px;
-  padding-left: 17px;
-  padding: 15px 17px;
+  padding: 22px 17px 5px;
   background: #ebdec2 url(../img/wafer.jpg);
-  width: 1100px;
+  width: 1112px;
   color: #323232;
 }
 
 .shop_info_head{
-  padding-top: 8px;
+  margin-bottom: 25px;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -658,6 +779,7 @@ body {
   display:inline-block;
   vertical-align: top;
   font-size: 16px;
+  line-height: 22px;
   width: 478px;
   margin-left: 27px;
   padding-left: 60px;
@@ -674,7 +796,7 @@ body {
   position: absolute;
   width: 48px;
   height: 48px;
-  left: -55px;
+  left: -53px;
   top: -12px;
 }
 
@@ -694,14 +816,16 @@ body {
   background: url(../img/ico_term.png) no-repeat;
 }
 
+.banner_info{
+  margin-bottom: 40px;
+}
+
 .form_button{
  display: block;
  float: right;
- padding: 10px 15px;
- margin-right:  15px;
- background-color: #f06441;
- border-radius: 100px;
- font-size: 18px;
+ padding:  2px  21px;
+ margin-right:  17px;
+  font-size: 18px;
  color: #ffffff;
  text-decoration: none;
  border:  none;
@@ -804,13 +928,60 @@ body {
   display: block;
 }
 
+
+/*======================================*/
+/*=============== Карта =================*/
+/*======================================*/
+
 .map{
+  position: relative;
   box-sizing: border-box;
-  margin-top: 40px;
+  width: 1200px;
+  margin: 0 auto;
   min-height: 430px;
-  background: url(../img/map.jpg);
+  background: url(../img/map.jpg) no-repeat;
 }
 
+.map_contacts {
+  position: absolute;
+  top: 62px;
+  right: 150px;
+  padding: 25px;
+  background: #fefefe;
+  color: #343434;
+  border-radius: 15px;
+  z-index: 10;
+}
+.map_contacts p {
+  margin: 0;
+  padding: 0;
+  width: 175px;
+  line-height: 20px;
+  font-size: 14px;
+  padding-top: 1px;
+}
+.map_contacts span {
+  display: block;
+  margin: 0 0 15px 0;
+  width: 225px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.map_text{
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+.back_btn{
+  padding: 15px 25px;
+}
+
+.back_btn{
+  font-size: 18px;
+  line-height: 24px;
+}
 
 /*======================================*/
 /*========== Сортировщик ===============*/
@@ -820,20 +991,16 @@ body {
   padding-top: 5px;
   font-size:  0;
   width:  860px;
-  margin-left: -10px;
 }
 
-.filter_ul{
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  list-style: none;
+.filter_inner{
+  padding-left: 10px;
 }
 
 .filter_item{
   display: inline-block;
+  margin-right: 15px;
   padding-top: 15px;
-  padding-left: 10px;
   text-align: left;
   vertical-align: top;
   font-size: 16px;
@@ -908,10 +1075,28 @@ body {
     padding-right: 27px;
 }
 
+.filter_button:hover{
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  outline: none;
+}
+
+.filter_button:active{
+  background-color: #eaeaea;
+  color: #000000;
+  border: none;
+  outline: none;
+  box-shadow: inset 0 2px 3px #696969;
+}
 
 /*======================================*/
 /*======= Кнопки навигации ===============*/
 /*======================================*/
+
+.switcher{
+  margin-bottom: 35px;
+}
 
 .switch_button{
     float: right;
@@ -923,7 +1108,6 @@ body {
    display: inline-block;
     width: 25px;
     height: 25px;
-    padding-left: 3px;
     font-size: 16px;
     line-height: 25px;
     vertical-align: top;
@@ -933,7 +1117,13 @@ body {
     border-radius: 50%;
 }
 
-.switch_button .current{
+.switch_button a:hover{
+    background-color: rgba(255,255,255,.2);
+}
+
+.switch_button .current,
+.switch_button:hover .current,
+.switch_button a:active{
     color: #000000;
     background-color: #ffffff;
 }
@@ -942,11 +1132,6 @@ body {
 /*======================================*/
 /*=============== Футер =================*/
 /*======================================*/
-
-
-.footer_info{
-  padding-top: 35px;
-} 
 
 .social_btn a,
 .cont_btn a,
@@ -968,22 +1153,27 @@ body {
   list-style: none;
 }
 
+.footer_contacts{
+  display: table;
+  float: left;
+  width: 305px;
+  padding-left: 20px;
+}
+
+.footer_contacts_btn{
+  display: table-row;
+}
+
 .footer_social{
   float: left;
   width: 380px;
-  margin: 0 16px 0 0;
-}
-
-.footer_contacts{
-  float: left;
-  padding-top: 5px;
-  width: 370px;
+  margin: 0 25px 0 0;
 }
 
 .footer_cr{
   position: relative;
   float: right;
-  padding-top: 30px;
+  padding-top: 17px;
   min-width: 190px;
   font-size: 12px;
   line-height: 18px;
@@ -992,8 +1182,8 @@ body {
 .footer_cr::before{
   content: "";
   position: absolute;
-  top: -5px;
-  left: 0;
+  top: -12px;
+  left: 4px;
   width: 108px;
   height: 38px;
   background-image: url(../img/logo_html.png);
@@ -1001,15 +1191,13 @@ body {
 }
 
 .cont_btn{
-  display: inline-block;
+  display: table-cell;
   vertical-align: top;
   text-align: left;
   font-size: 13px;
   line-height: 22px;
   text-decoration: none;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  width: 165px;
+  min-width: 142px;
 }
 
 .footer_social_btn li{
@@ -1018,7 +1206,7 @@ body {
 
 .social_btn{
   display: block;
-  margin-right: 3px;
+  margin-right: 12px;
   width: 38px;
   height: 38px;
   font-size: 0;
@@ -1049,8 +1237,8 @@ body {
 .heart::before{
  content: "";
  position: absolute;
- top: 4px;
- left: -17px;
+ top: 6px;
+ left: -20px;
  width: 15px;
  height: 13px;
  background-image: url(../img/ico_heart.png);
