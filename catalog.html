@@ -66,33 +66,26 @@
 						<li class="menu_button btn_bask">
 							<a href="#" class="bask_full">2 товара</a>
 							<article class="win_look win_check clearfix">
-								<div class="bask_row">
+								<div class="bask_table">
 									<ul>
-										<li class="col_close"> <button class="col_close_btn" type="button" title="Закрыть">Закрыть</button></li>
-										<li class="col_pic"><img src="img/ice_orange.jpg" width="33" height="33" class="gallery_product"></li>
-										<li class="col_descr"><a href="#">Пломбир с апельсиновым джемом</a></li>
-										<li class="col_netto">1,5 кг х 200 руб.</li>
-										<li class="col_price">300 руб.</li>
+										<li class="bask_cell col_close"><button class="col_close_btn" type="button" title="Закрыть">Закрыть</button></li>
+										<li class="bask_cell col_pic"><img src="img/ice_orange.jpg" width="33" height="33" class="gallery_product"></li>
+										<li class="bask_cell col_descr"><a href="#">Пломбир с апельсиновым джемом</a></li>
+										<li class="bask_cell col_netto">1,5 кг х 200 руб.</li>
+										<li class="bask_cell col_price">300 руб.</li>
+									</ul>
+									<ul>
+										<li class="bask_cell col_close"> <button class="col_close_btn" type="button" title="Закрыть">Закрыть</button></li>
+										<li class="bask_cell col_pic"><img src="img/ice_pink.jpg" width="33" height="33" class="gallery_product"></li>
+										<li class="bask_cell col_descr"><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></li>
+										<li class="bask_cell col_netto">1,5 кг х 300 руб.</li>
+										<li class="bask_cell col_price">450 руб.</li>
 									</ul>
 								</div>
-								<div class="bask_row">
-									<ul>
-										<li class="col_close"> <button class="col_close_btn" type="button" title="Закрыть">Закрыть</button></li>
-										<li class="col_pic col_bottom"><img src="img/ice_pink.jpg" width="33" height="33" class="gallery_product"></li>
-										<li class="col_descr col_bottom"><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></li>
-										<li class="col_netto col_bottom">1,5 кг х 300 руб.</li>
-										<li class="col_price col_bottom">450 руб.</li>
-									</ul>
-								</div>
-								<div class="bask_row_button">
-									<div  class="bask_result">
-										<div class="bask_sum">
-											Итого:  750руб.
-										</div>
-										<div class="bask_submit">
-											<a href="#" class="red_btn bask_btn" >Оформить заказ</a>
-										</div>
-									</div>								
+								<hr>
+								<div class="bask_result">
+									<p>Итого: 750р.</p>
+									<a href="#" class="red_btn bask_btn">Оформить заказ</a></div>
 								</div>
 							</article>
 						</li>
@@ -140,9 +133,21 @@
 						</div>
 						<div  class="filter_item">
 							<div class="ice_price">
-								<span  class="annons">Цена: 100 руб. - 500 руб.</span>
-								<div class="filter_view">
-
+								<div class="price_controls annons">
+									<span class="tag">Цена:&nbsp;</span>
+									<label class="min_price">
+										<input name="min_price" type="text" value="100"> &nbsp;руб. -&nbsp;
+									</label>
+									<label class="max_price">
+										<input name="max_price" type="text" value="500">&nbsp;руб.
+									</label>
+								</div>
+								<div class="filter_view range_controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle_min"></div>
+									<div class="toggle toggle_max"></div>
 								</div>
 							</div>
 						</div>
@@ -354,8 +359,8 @@
 			<div class="switcher clearfix">
 				<div class="switch_button">
 					<a class="disabled" href="#prev"> &#8249; </a>
-					<a href="#1">1</a>
-					<a class="current" href="#2">2</a>
+					<a href="#1" class="current" >1</a>
+					<a href="#2">2</a>
 					<a href="#3">3</a>
 					<a href="#3">4</a>
 					<a href="#3">5</a>
