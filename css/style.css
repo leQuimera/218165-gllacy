@@ -1081,8 +1081,7 @@ body > input[type="radio"] {
 }
 
 .filter_view{
-  height: 34px;
-  padding:  0px 10px;
+  padding:  7px 10px;
   background: #a9bab0;
   border-radius: 17px;
   white-space: nowrap;
@@ -1183,6 +1182,7 @@ body > input[type="radio"] {
   background: #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 2px rgba(0,0,0,.1);
+  cursor: pointer;
 }
 
 .range_controls .toggle_min {
@@ -1200,7 +1200,7 @@ body > input[type="radio"] {
 .fatness_change,
 .filler_check{
   display: inline-block;
-  padding-top: 5px;
+  vertical-align: middle;
 }
 
 .filter_button{
@@ -1233,8 +1233,147 @@ body > input[type="radio"] {
 /*======= Подмена чекбоксов ============*/
 /*======================================*/
 
+.fat_input{
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+ }
+
+ .fat_input + label {
+  cursor: pointer;
+}
+ .fat_input:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+ .fat_input:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 25px;
+}
+
+ .fat_input:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.fat_input:not(checked) + label:hover:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+ .fat_input:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 0;
+  transition: all .2s;
+}
+
+ .fat_input:checked + label:after {
+  opacity: 1;
+}
 
 
+.fat_input:not(checked)  + .disabled:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid  #ffffff;
+  border-radius: 50%;
+}
+
+ .fat_input:not(checked) + .disabled:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #b2c1b7;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.filter_check {
+ vertical-align: top;
+  width: 17px;
+  height: 17px;
+ }
+
+.filter_check + label {
+  cursor: pointer;
+}
+
+.filter_check:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.filter_check:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 25px;
+}
+
+.filter_check:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+}
+
+.filter_check:not(checked) + label:hover:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #ffffff;
+}
+
+ .filter_check:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 5px;
+  height: 9px;
+  border: 3px solid #ffffff;
+  border-left: none;
+  border-top: none;
+  border-radius: 3px; 
+  transform: rotate(40deg);
+  opacity: 0;
+}
+  
+ .filter_check:checked + label:after {
+  opacity: 1;
+}
 
 
 /*======================================*/
@@ -1390,4 +1529,80 @@ body > input[type="radio"] {
  height: 13px;
  background-image: url(../img/ico_heart.png);
  background-repeat: no-repeat;
+}
+
+
+/*======================================*/
+/*========== Обратная связь==============*/
+/*======================================*/
+
+.modal_content {
+  display: none;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  margin-left: -270px;
+  width: 437px;
+  padding: 10px 20px 20px;
+  background-color: #f8f7f4;
+  color: #323232;
+  border-radius: 5px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal_content_btn {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: 22px;
+  height: 22px;
+ font-size: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.modal_content_btn::before,
+.modal_content_btn::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #070707;
+  border-radius: 1px;
+}
+
+.modal_content_btn::before {
+  transform: rotate(45deg);
+}
+
+.modal_content_btn::after {
+  transform: rotate(-45deg);
+}
+
+.content_form h3{
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.modal_text{
+  width: 266px;
+  margin-bottom: 20px;
+}
+
+.content_form textarea{
+ margin-bottom: 20px; 
+  width: 430px;
+  height: 155px;
+  resize: none;
+}
+
+.modal_btn{
+  position: relative;
+  float: right;
+  padding: 14px 25px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
 }
