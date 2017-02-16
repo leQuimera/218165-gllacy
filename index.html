@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Глейси</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">	
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -13,7 +15,7 @@
 		<header class="contain clearfix">
 			<div class="top_in_line clearfix">
 				<div class="pic_logo">
-					<a href="index.html"><img src="img/logo_site.png" width="154" height="64" alt="Лого проекта"></a>
+					<img src="img/logo_site.png" width="154" height="64" alt="Лого проекта">
 				</div>
 				<nav class="top_menu">
 					<ul class="nav_menu">
@@ -106,10 +108,10 @@
 						</div>
 					</div>
 					<div class="slider_controls">
-		            	<label for="btn_1"></label>
-            			<label for="btn_2"></label>
-            			<label for="btn_3"></label>
-          			</div>
+						<label for="btn_1"></label>
+						<label for="btn_2"></label>
+						<label for="btn_3"></label>
+					</div>
 				</div>
 				<section class="bannered clearfix">
 					<article class="banner b_left">
@@ -264,16 +266,18 @@
 				</div>
 			</div>
 		</footer>
-		 <div class="modal_content clearfix">
-      			<button class="modal_content_btn" type="button" title="Закрыть">Закрыть</button>
-      			<div class="content_form">
-      				<h3>Мы обязательно вам ответим!</h3>
-      				<input class="field modal_text" type="text" name="user_name" placeholder="Как вас зовут?" required>
-      				<input class="field modal_text" type="text" name="user_email" placeholder="Ваша почта для ответа" required>
-      				<textarea class="field" name="user_text" placeholder="Напишите что-нибудь"  required></textarea>
-      			</div>
-      			<button class="red_btn modal_btn" type="button" title="Отправить">Отрправить</button>
-		  </div>		
+		<div class="modal_content clearfix">
+			<button class="modal_content_btn" type="button" title="Закрыть">Закрыть</button>
+			<div class="content_form">
+				<h3>Мы обязательно вам ответим!</h3>
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<input class="field modal_text" type="text" name="user_name" placeholder="Как вас зовут?" required>
+					<input class="field modal_text" type="text" name="user_email" placeholder="Ваша почта для ответа" required>
+					<textarea class="field" name="user_text" placeholder="Напишите что-нибудь"  required></textarea>
+				</div>
+				<button class="red_btn modal_btn" type="button" title="Отправить">Отрправить</button>
+			</form>
+		</div>		
 	</div>
 </body>
 </html>
