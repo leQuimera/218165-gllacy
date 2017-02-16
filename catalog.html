@@ -85,7 +85,7 @@
 								<hr>
 								<div class="bask_result">
 									<p>Итого: 750 руб.</p>
-									<a href="#" class="red_btn bask_btn">Оформить заказ</a></div>
+									<a href="#" class="red_btn bask_btn">Оформить заказ</a>
 								</div>
 							</article>
 						</li>
@@ -111,103 +111,104 @@
 			</div>
 		</section>
 
-		<main class="contain">
-			<div class="filter clearfix">
-				<div class="catalog">
-					<h1>Сливочное мороженое</h1>
-				</div>
-				<form action="https://echo.htmlacademy.ru" method="post">
-					<div class="filter_inner">
-						<div class="filter_item">
-							<div class="ice_select">
-								<span class="annons">Сортировка:</span>
-								<div class="filter_sort ">
-									<select>
-										<option value="popularity" selected>по популярности</option>
-										<option value="low_cost">сначала недорогие</option>
-										<option value="high_cost">сначала дорогие</option>
-										<option value="fat">по жирности</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div  class="filter_item">
-							<div class="ice_price">
-								<div class="price_controls annons">
-									<span class="tag">Цена:&nbsp;</span>
-									<label class="min_price">
-										<input name="min_price" type="text" value="100"> &nbsp;руб. -&nbsp;
-									</label>
-									<label class="max_price">
-										<input name="max_price" type="text" value="500">&nbsp;руб.
-									</label>
-								</div>
-								<div class="filter_view range_controls">
-									<div class="scale">
-										<div class="bar"></div>
-									</div>
-									<div class="toggle toggle_min"></div>
-									<div class="toggle toggle_max"></div>
-								</div>
-							</div>
-						</div>
-						<div  class="filter_item">
-							<div class="fatness">
-								<span  class="annons">Жирность:</span>
-								<div class="filter_view">
-									<div class="fatness_change">
-										<input type="radio" name="fat" value="0" id="fat0" class="fat_input">		
-										<label for="fat0">0%</label>
-									</div>
-									<div class="fatness_change">
-										<input type="radio" name="fat" value="0" id="fat10" class="fat_input">		
-										<label for="fat10">до 10%</label>
-									</div>
-									<div class="fatness_change">
-										<input type="radio" name="fat" value="0" id="fat30" class="fat_input">		
-										<label for="fat30">до 30%</label>
-									</div>
-									<div class="fatness_change">
-										<input type="radio" name="fat" value="0" id="fat31" class="fat_input">		
-										<label for="fat31">выше 30%</label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="filter_item">
-							<div class="filler">
-								<span  class="annons">Наполнители:</span>
-								<div class="filter_view line_check">
-									<div class="filler_check">
-										<input type="checkbox" name="filler_ch" value="ch" id="ch"  class="filter_check" checked>
-										<label for="ch">шоколадные</label>
-									</div>
-									<div class="filler_check">
-										<input type="checkbox" name="filler_shug" value="shug" id="shug" class="filter_check" checked>
-										<label for="shug">сахарные присыпки</label>
-									</div>
-									<div class="filler_check">
-										<input type="checkbox" name="filler_frut" value="frut" id="frut" class="filter_check">
-										<label for="frut">фрукты</label>
-									</div>
-									<div class="filler_check">
-										<input type="checkbox" name="filler_syr" value="syr" id="syr" class="filter_check">
-										<label for="syr">сиропы</label>
-									</div>
-									<div class="filler_check">
-										<input type="checkbox" name="filler_jam" value="jam" id="jam" class="filter_check">
-										<label for="jam">джемы</label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="filter_item filter_btn">
-							<button class="filter_view filter_button">Применить</button>
-						</div>
+		<main class="contain_main">
+			<section class="contain">
+				<div class="filter clearfix">
+					<div class="catalog">
+						<h1>Сливочное мороженое</h1>
 					</div>
-				</form>
-			</div>
-
+					<form action="https://echo.htmlacademy.ru" method="post">
+						<div class="filter_inner">
+							<div class="filter_item">
+								<div class="ice_select">
+									<span class="annons">Сортировка:</span>
+									<div class="filter_sort ">
+										<select>
+											<option value="popularity" selected>по популярности</option>
+											<option value="low_cost">сначала недорогие</option>
+											<option value="high_cost">сначала дорогие</option>
+											<option value="fat">по жирности</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div  class="filter_item">
+								<div class="ice_price">
+									<div class="price_controls annons">
+										<span class="tag">Цена:&nbsp;</span>
+										<label class="min_price">
+											<input name="min_price" type="text" value="100"> &nbsp;руб. -&nbsp;
+										</label>
+										<label class="max_price">
+											<input name="max_price" type="text" value="500">&nbsp;руб.
+										</label>
+									</div>
+									<div class="filter_view range_controls">
+										<div class="scale">
+											<div class="bar"></div>
+										</div>
+										<div class="toggle toggle_min"></div>
+										<div class="toggle toggle_max"></div>
+									</div>
+								</div>
+							</div>
+							<div  class="filter_item">
+								<div class="fatness">
+									<span  class="annons">Жирность:</span>
+									<div class="filter_view fatness_view">
+										<div class="fatness_change">
+											<input type="radio" name="fat" value="0" id="fat0" class="fat_input">		
+											<label for="fat0">0%</label>
+										</div>
+										<div class="fatness_change">
+											<input type="radio" name="fat" value="0" id="fat10" class="fat_input">		
+											<label for="fat10">до 10%</label>
+										</div>
+										<div class="fatness_change">
+											<input type="radio" name="fat" value="0" id="fat30" class="fat_input">		
+											<label for="fat30">до 30%</label>
+										</div>
+										<div class="fatness_change">
+											<input type="radio" name="fat" value="0" id="fat31" class="fat_input">		
+											<label for="fat31">выше 30%</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filter_item">
+								<div class="filler">
+									<span  class="annons">Наполнители:</span>
+									<div class="filter_view line_check">
+										<div class="filler_check">
+											<input type="checkbox" name="filler_ch" value="ch" id="ch"  class="filter_check" checked>
+											<label for="ch">шоколадные</label>
+										</div>
+										<div class="filler_check">
+											<input type="checkbox" name="filler_shug" value="shug" id="shug" class="filter_check" checked>
+											<label for="shug">сахарные присыпки</label>
+										</div>
+										<div class="filler_check">
+											<input type="checkbox" name="filler_frut" value="frut" id="frut" class="filter_check">
+											<label for="frut">фрукты</label>
+										</div>
+										<div class="filler_check">
+											<input type="checkbox" name="filler_syr" value="syr" id="syr" class="filter_check">
+											<label for="syr">сиропы</label>
+										</div>
+										<div class="filler_check">
+											<input type="checkbox" name="filler_jam" value="jam" id="jam" class="filter_check">
+											<label for="jam">джемы</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filter_item filter_btn">
+								<button class="filter_view filter_button">Применить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
 			<div class="gallery clearfix">
 				<ul class="gallery_ul">
 					<li class="gallery_item">
@@ -356,17 +357,19 @@
 					</li>															
 				</ul>
 			</div>
-			<div class="switcher clearfix">
-				<div class="switch_button">
-					<a class="disabled" href="#prev"> &#8249; </a>
-					<a href="#1" class="current" >1</a>
-					<a href="#2">2</a>
-					<a href="#3">3</a>
-					<a href="#3">4</a>
-					<a href="#3">5</a>
-					<a href="#next"> &#8250; </a>
+			<section class="contain">
+				<div class="switcher clearfix">
+					<div class="switch_button">
+						<a class="disabled" href="#prev"> &#8249; </a>
+						<a href="#1" class="current" >1</a>
+						<a href="#2">2</a>
+						<a href="#3">3</a>
+						<a href="#3">4</a>
+						<a href="#3">5</a>
+						<a href="#next"> &#8250; </a>
+					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 		<footer class="footer_contain">
 			<div class="footer_in contain">
@@ -390,7 +393,7 @@
 						</ul>
 					</div>
 					<div class="footer_cr">
-						<p>Сделано в <a href="#"><span>HTML Academy</span></a> 2016</p>
+						<p>Сделано в <a href="#"><span>HTML Academy</span></a> 2017</p>
 					</div>
 				</div>
 			</div>

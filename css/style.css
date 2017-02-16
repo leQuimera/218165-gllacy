@@ -62,6 +62,10 @@ body > input[type="radio"] {
   vertical-align: top;
 }
 
+.pic_logo a img{
+  border: none;
+}
+
 .top_in_line a{
   color: #ffffff;
   text-decoration: none;
@@ -77,7 +81,7 @@ body > input[type="radio"] {
 
 .catalog h1{
   margin-top: 0;
-  margin-bottom: 7px;
+  margin-bottom: 25px;
   padding: 0;
   font-size: 35px;
   line-height: 45px;
@@ -661,7 +665,7 @@ body > input[type="radio"] {
 
 .vidget{
   position: relative;
-  padding-top: 270px;
+  padding-top: 277px;
   text-align: center;
   color: #ffffff;
 }
@@ -669,7 +673,7 @@ body > input[type="radio"] {
 .vidget_text{
   width: 700px;
   margin:  0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
   text-align: center;
 }
 
@@ -685,14 +689,15 @@ body > input[type="radio"] {
   display: inline;
   padding-top: 1px;
   font-size: 32px;
+  line-height: 44px;
   color: #ffffff;
   text-decoration: none;
 }
 
 .slider_controls {
   position: absolute;
-  bottom: 25px;
-  left: 0;
+  bottom: 19px;
+  left: 3px;
   z-index: 20;
   font-size: 0;
 }
@@ -753,7 +758,7 @@ body > input[type="radio"] {
 }
 
 .bannered{
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 
 .banner{
@@ -764,13 +769,15 @@ body > input[type="radio"] {
 
 .b_left{
   float: left;
-  padding-bottom: 30px;
+  padding-top: 18px;
+  padding-bottom: 21px;
   background: #60031c url(../img/raspberry.jpg) center center;
 }
 
 .b_right{
   float: right;
-  padding-bottom: 30px;
+  padding-top: 18px;
+  padding-bottom: 21px;
   background: #0c0300 url(../img/chocolate.jpg) center center; 
 }
 
@@ -820,16 +827,16 @@ body > input[type="radio"] {
 
 .ad_text{
   display: block;
-  margin: 20px 0 40px;
+  margin: 20px 0 42px;
   font-size: 18px;
-  vertical-align: top;
   line-height: 22px;
+  vertical-align: top;
 }
 
 .news_head{
   margin-bottom: 5px;
-  line-height: 22px;
   font-size: 16px;
+  line-height: 22px;
   color: #323232;
 }
 
@@ -854,7 +861,7 @@ body > input[type="radio"] {
 }
 
 .shop_info_head{
-  margin-bottom: 25px;
+  margin-bottom: 21px;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -940,14 +947,20 @@ body > input[type="radio"] {
 
 
 .gallery{
-  margin-bottom: 75px;
+  box-sizing: border-box;
+  width: 1162px;
+  margin: 0 auto 75px;
   text-align: left;
   font-size:  0;
   line-height: 0;
 }
 
+.gallery_hit{
+  margin-bottom: 34px;
+}
+
 .gallery_ul{
-  margin-left: -12px;
+  margin-left: -14px;
   padding: 0;
   font-size: 0;
   list-style: none;
@@ -962,8 +975,8 @@ body > input[type="radio"] {
   display: inline-block;
   vertical-align: top;
   margin-top: 19px;
-  margin-left: 13px;
-  padding: 10px 5px 0 4px;
+  margin-left: 9px;
+  padding: 10px 9px 0 9px;
   width: 267px;
   text-align: center;
   font-size: 16px;
@@ -974,10 +987,14 @@ body > input[type="radio"] {
   position: relative;
   }
 
+. .gallery_item a img{
+  border: none;
+}
+
 .hit::before {
   content: "";
   left: 5px;
-  top: 5px;
+  top: 9px;
   position: absolute;
   width: 61px;
   height: 61px;
@@ -996,6 +1013,7 @@ body > input[type="radio"] {
 .gallery_desc{
   margin-top: 5px;
   margin-bottom: 10px;
+  padding: 0 4px;
   text-align: center;
 }
 
@@ -1093,10 +1111,6 @@ body > input[type="radio"] {
   width:  870px;
 }
 
-.filter_inner{
-padding-top: 16px;
-}
-
 .filter_item{
   display: inline-block;
   margin-right: 15px;
@@ -1108,7 +1122,7 @@ padding-top: 16px;
 }
 
 .filter_view{
-  padding:  9px 10px;
+  padding:  8px 10px;
   background: #a9bab0;
   border-radius: 17px;
   white-space: nowrap;
@@ -1125,26 +1139,70 @@ padding-top: 16px;
 .filter_sort{
   position: relative;
   overflow: hidden;
-  text-align: left;
   padding-right: 30px;
   width: 162px;
   height: 34px;
   background-color: #a9bab0;
+  border-color: #a6b8ae;
   color: #ffffff;
+  text-align: left;
   border-radius: 17px;
 }
 
-.filter_sort select{
- width: 190px;
- padding-left: 11px;
- background: transparent;
- background: rgba(0, 0, 0, 0);
- color: #ffffff;
- height: 35px;
- font-size: 16px;
- line-height: 35px;
- outline: 0;
+.filter_sort::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #fff;
 }
+.filter_sort:hover::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #000;
+  cursor: pointer;
+}
+
+.filter_sort select{
+position: relative;
+padding-left: 11px;
+color: #ffffff;
+width: 130%;
+height: 35px;
+background: transparent;
+background: rgba(0, 0, 0, 0);
+font-size: 16px;
+line-height: 35px;
+outline: 0;
+border-style: none;
+}
+
+.filter_sort select:focus {
+  border: none;
+  border-style: none;
+  outline: none;
+}
+
+.filter_sort:hover select {
+  color: #000000;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+
 
 .filter_sort option{
   color: #000000;
@@ -1222,16 +1280,20 @@ padding-top: 16px;
   max-width: 410px;
 }
 
-.fatness_change,
+.fatness_view{
+  padding: 8px 15px 8px 10px;
+}
+
+.fatness_change{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px 0 6px;
+}
+
 .filler_check{
   display: inline-block;
   vertical-align: middle;
   padding: 0 9px;
-}
-
-.line_check{
-  padding-bottom: 9px;
-  padding-top: 5px;
 }
 
 .filler_check label{
@@ -1245,21 +1307,23 @@ padding-top: 16px;
 .filter_button{
   margin-top: 25px;
   margin-right: 0;
+  padding: 6px 27px 7px 29px;
   font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
   border: 2px solid #ffffff;
-  padding: 4px 27px 6px 29px;
 }
 
 .filter_button:hover{
   background-color: #ffffff;
   color: #000000;
-  border: none;
+  border: 2px solid #ffffff;
   outline: none;
 }
 
 .filter_button:active{
   background-color: #eaeaea;
+  padding: 8px 27px 9px 29px;
   color: #000000;
   border: none;
   outline: none;
@@ -1592,7 +1656,8 @@ padding-top: 16px;
 .social_btn_inst:active,
 .social_btn_fb:active,
 .social_btn_vk:active {
-box-shadow: inset 0px 2px 1px rgba(136, 136, 136);
+  opacity: 1;
+  box-shadow: inset 0px 2px 1px rgba(136, 136, 136);
 }
 
 .btn_heart{
@@ -1627,6 +1692,11 @@ box-shadow: inset 0px 2px 1px rgba(136, 136, 136);
   color: #323232;
   border-radius: 5px;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 20;
+}
+
+.modal_content_show {
+  display: block;
 }
 
 .modal_content_btn {
@@ -1684,4 +1754,15 @@ box-shadow: inset 0px 2px 1px rgba(136, 136, 136);
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
+}
+
+.modal_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }

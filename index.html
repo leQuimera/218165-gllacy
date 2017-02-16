@@ -138,7 +138,7 @@
 					</article>
 				</section>
 
-				<section class="gallery clearfix">
+				<section class="gallery gallery_hit clearfix">
 					<ul class="gallery_ul">
 						<li class="gallery_item hit">
 							<article class="art_item1">
@@ -221,6 +221,7 @@
 				</section>
 			</div>
 			<div class="map">
+				<div id="yandex_map" style="width:100%;height:430px;"></div>
 				<div class="map_contacts">
 					<div class="map_text">
 						<p>
@@ -261,11 +262,12 @@
 						</ul>
 					</div>
 					<div class="footer_cr">
-						<p>Сделано в <a href="#"><span>HTML Academy</span></a> 2016</p>
+						<p>Сделано в <a href="#"><span>HTML Academy</span></a> 2017</p>
 					</div>
 				</div>
 			</div>
 		</footer>
+
 		<div class="modal_content clearfix">
 			<button class="modal_content_btn" type="button" title="Закрыть">Закрыть</button>
 			<div class="content_form">
@@ -274,10 +276,13 @@
 					<input class="field modal_text" type="text" name="user_name" placeholder="Как вас зовут?" required>
 					<input class="field modal_text" type="text" name="user_email" placeholder="Ваша почта для ответа" required>
 					<textarea class="field" name="user_text" placeholder="Напишите что-нибудь"  required></textarea>
-				</div>
-				<button class="red_btn modal_btn" type="button" title="Отправить">Отрправить</button>
-			</form>
+					<button class="red_btn modal_btn" type="button" title="Отправить">Отрправить</button>
+				</form>
+			</div>	
 		</div>		
+		<div class="modal_overlay"></div>
 	</div>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
