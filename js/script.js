@@ -2,8 +2,8 @@ var btnFeedbackOpen = document.querySelector(".back_btn");
 var popupFeedback = document.querySelector(".modal_content");
 var btnFeedbackClose = document.querySelector(".modal_content_btn");
 var overlay = document.querySelector(".modal_overlay");
-var fieldName = popup.querySelector("[name=user_name]");
-var fieldAdress = popup.querySelector("[name=user_email]");
+var fieldName = popupFeedback.querySelector("[name=user_name]");
+var fieldAdress = popupFeedback.querySelector("[name=user_email]");
 var fieldComment = document.querySelector("[name=user_text]");
 var btnSubmit = document.querySelector('.modal_btn');
 
@@ -36,3 +36,4 @@ function init() {
 
   myMap.geoObjects.add(myPlacemark);
 }
+

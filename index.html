@@ -15,7 +15,7 @@
 		<header class="contain clearfix">
 			<div class="top_in_line clearfix">
 				<div class="pic_logo">
-					<img src="img/logo_site.png" width="154" height="64" alt="Лого проекта">
+					<img src="img/logo_site.png" width="154" height="64" alt="">
 				</div>
 				<nav class="top_menu">
 					<ul class="nav_menu">
@@ -39,7 +39,8 @@
 							<div class="win_look win_search">
 								<form action="https://echo.htmlacademy.ru" method="post">
 									<div class="input_search">
-										<input class="field" type="text" name="search_inquiry" placeholder="Что ищем?">
+										<input class="field" type="text" name="search_inquiry" required>
+										<label class="placeholder" data-placeholder="Что ищем?"></label>
 									</div>
 								</form>
 							</div>
@@ -48,8 +49,14 @@
 							<a href="#" class="top_btn top_enter">Вход</a>
 							<div class="win_look win_login clearfix">
 								<form action="https://echo.htmlacademy.ru" method="post">
-									<input class="field field_login" type="text" name="e-mail" placeholder="E-MAIL" required>
-									<input class="field field_login" type="password" name="password" placeholder="Пароль" required>
+									<div class="input_search">
+										<input class="field field_login" type="text" name="e-mail" required>
+										<label class="placeholder" data-placeholder="E-Mail"></label>
+									</div>
+									<div class="input_search">
+										<input class="field field_login" type="password" name="password" required>
+										<label class="placeholder" data-placeholder="Пароль"></label>
+									</div>
 									<div class="clearfix">
 										<div class="src_btn">
 											<button class="red_btn login_btn" type="submit">
@@ -61,6 +68,7 @@
 											<a href="#"><span>Новая регистрация</span></a>
 										</div>
 									</div>
+									
 								</form>
 							</div>
 
@@ -212,8 +220,11 @@
 							<div class="post_body">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </div>
 							<div class="send_form">
 								<form class="contact_us" action="/echo" method="post">
-									<input type="email" name="email" placeholder="Электронная почта" class="contact_email">
-									<button type="submit" class="red_btn form_button">Отправить</button>
+									<div class="input_search">
+										<input type="text" name="email" class="field contact_email">
+										<label class="placeholder" data-placeholder="Электронная почта"></label>
+										<button type="submit" class="red_btn form_button">Отправить</button>
+									</div>
 								</form>
 							</div>
 						</div>
