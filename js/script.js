@@ -1,15 +1,3 @@
-var btnFeedbackOpen = document.querySelector(".back_btn");
-var popupFeedback = document.querySelector(".modal_content");
-var btnFeedbackClose = document.querySelector(".modal_content_btn");
-var overlay = document.querySelector(".modal_overlay");
-var fieldName = popupFeedback.querySelector("[name=user_name]");
-var fieldAdress = popupFeedback.querySelector("[name=user_email]");
-var fieldComment = document.querySelector("[name=user_text]");
-var btnSubmit = document.querySelector('.modal_btn');
-
-
-
-
 ymaps.ready(init);
 var myMap;
 
@@ -37,3 +25,35 @@ function init() {
   myMap.geoObjects.add(myPlacemark);
 }
 
+
+var btnFeedbackOpen = document.querySelector(".back_btn"); 
+var popupFeedback = document.querySelector(".modal_content");
+var overlay = document.querySelector(".modal_overlay");
+var btnFeedbackClose = popupFeedback.querySelector(".modal_content_btn");
+
+
+btnFeedbackOpen.addEventListener('click', function(even){
+  event.preventDefault();
+  popupFeedback.classList.add('modal_content_show');
+  overlay.classList.add('modal_content_show')
+});
+
+btnFeedbackClose.addEventListener('click', function(event){
+  event.preventDefault();
+  popupFeedback.classList.remove('modal_content_show');
+  overlay.classList.remove('modal_content_show');
+});
+
+overlay.addEventListener('click', function(event){
+  popupFeedback.classList.remove('modal_content_show');
+  overlay.classList.remove('modal_content_show');
+});
+
+window.addEventListener('keydown', function(event) {
+  if (event.keyCode === 27) {
+    if (popupFeedback.classList.contains('modal_content')) {
+      popupFeedback.classList.remove('modal_content_show');
+      overlay.classList.remove('modal_content_show');
+    }
+  }
+});
