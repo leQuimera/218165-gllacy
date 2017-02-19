@@ -1575,12 +1575,11 @@ body > input[type="radio"]  {
   left: 6px;
   width: 5px;
   height: 9px;
-  border: 3px solid #ffffff;
-  border-left: none;
-  border-top: none;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
   border-radius: 3px; 
   -webkit-transform: rotate(-45deg);
-  transform: rotate(40deg);
+  transform: rotate(45deg);
   opacity: 0;
 }
 
@@ -1608,11 +1607,11 @@ body > input[type="radio"]  {
   width: 5px;
   height: 9px;
   border: 3px solid #b2c1b7;
-  border-left: none;
-  border-top: none;
+  border-left: 0;
+  border-top: 0;
   border-radius: 3px; 
   -webkit-transform: rotate(-45deg);
-  transform: rotate(40deg);
+  transform: rotate(45deg);
   opacity: 0;
 }
 
