@@ -836,7 +836,7 @@ body > input[type="radio"]  {
 }
 
 .bannered {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .banner {
@@ -848,14 +848,14 @@ body > input[type="radio"]  {
 .b_left {
   float: left;
   padding-top: 18px;
-  padding-bottom: 23px;
+  padding-bottom: 25px;
   background: #60031c url(../img/raspberry.jpg) center center;
 }
 
 .b_right {
   float: right;
   padding-top: 18px;
-  padding-bottom: 23px;
+  padding-bottom: 25px;
   background: #0c0300 url(../img/chocolate.jpg) center center; 
 }
 
@@ -908,7 +908,7 @@ body > input[type="radio"]  {
 
 .ad_text {
   display: block;
-  margin: 19px 0 46px;
+  margin: 18px 0 45px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
@@ -945,7 +945,7 @@ body > input[type="radio"]  {
 
 .shop_info {
   margin-bottom: 38px;
-  padding: 23px 19px 2px;
+  padding: 20px 19px 0px;
   background: #ebdec2 url(../img/wafer.jpg);
   width: 1112px;
   color: #323232;
