@@ -460,7 +460,7 @@ body > input[type="radio"]  {
   transform: translateY(0px);
 }
 
-.placeholder:before {
+.placeholder::before {
   content: attr(data-placeholder);
   white-space: nowrap;
 }
@@ -744,7 +744,7 @@ body > input[type="radio"]  {
 
 .vidget {
   position: relative;
-  padding-top: 277px;
+  padding-top: 275px;
   text-align: center;
   color: #ffffff;
 }
@@ -864,7 +864,7 @@ body > input[type="radio"]  {
   float: left;
   background: #ffffff url(../img/fon_news.jpg);
   color: #323232;
-  padding-top: 23px;
+  padding-top: 25px;
   min-height: 180px;
 }
 
@@ -1117,7 +1117,7 @@ body > input[type="radio"]  {
 .gallery_desc {
   margin-top: 7px;
   margin-bottom: 10px;
-  padding: 0 6px 0 3px;
+  padding: 0 4px 0 6px;
   text-align: center;
 }
 
@@ -1472,7 +1472,7 @@ body > input[type="radio"]  {
   padding: 0 0 0 29px;
 }
 
-.fat_input + label:before {
+.fat_input + label::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1484,11 +1484,11 @@ body > input[type="radio"]  {
   box-shadow: 0 0 0 1px #ffffff;
 }
 
-.fat_input + label:hover:before {
+.fat_input + label:hover::before {
   box-shadow:  0 0 0 2px #ffffff;
 }
 
-.fat_input:not(checked) + label:after {
+.fat_input:not(checked) + label::after {
   content: '';
   position: absolute;
   top: 3px;
@@ -1501,11 +1501,11 @@ body > input[type="radio"]  {
   transition: all .2s;
 }
 
-.fat_input:checked + label:after {
+.fat_input:checked + label::after {
   opacity: 1;
 }
 
-.fat_input:not(checked)  + .disabled:before {
+.fat_input:not(checked)  + .disabled::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1516,7 +1516,7 @@ body > input[type="radio"]  {
   border-radius: 50%;
 }
 
-.fat_input:not(checked) + .disabled:after {
+.fat_input:not(checked) + .disabled::after {
   content: '';
   position: absolute;
   top: 3px;
@@ -1549,7 +1549,7 @@ body > input[type="radio"]  {
   padding: 0 0 0 31px;
 }
 
-.filter_check:not(checked) + label:before {
+.filter_check:not(checked) + label::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1560,11 +1560,11 @@ body > input[type="radio"]  {
   border-radius: 4px;
 }
 
-.filter_check:not(checked) + label:hover:before {
+.filter_check:not(checked) + label:hover::before {
   box-shadow:  0 0 0 2px #ffffff;
 }
 
-.filter_check:not(checked) + label:after {
+.filter_check:not(checked) + label::after {
   content: '';
   position: absolute;
   top: 2px;
@@ -1580,12 +1580,12 @@ body > input[type="radio"]  {
   opacity: 0;
 }
 
-.filter_check:checked + label:after {
+.filter_check:checked + label::after {
   opacity: 1;
 }
 
 
-.filter_check:not(checked) + .disabled:after {
+.filter_check:not(checked) + .disabled::after {
   content: '';
   position: absolute;
   top: 0;
@@ -1596,7 +1596,7 @@ body > input[type="radio"]  {
   border-radius: 4px;
 }
 
-.filter_check:not(checked) + .disabled:after {
+.filter_check:not(checked) + .disabled::after {
   content: '';
   position: absolute;
   top: 2px;
