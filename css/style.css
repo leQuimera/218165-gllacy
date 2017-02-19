@@ -1166,7 +1166,8 @@ body > input[type="radio"]  {
 .map {
   position: relative;
   box-sizing: border-box;
-  width: 1200px;
+  width:100%; 
+  min-width: 1200px;
   margin: 0 auto;
   min-height: 430px;
   background: url(../img/map.jpg) no-repeat;
@@ -1175,7 +1176,8 @@ body > input[type="radio"]  {
 .map_contacts {
   position: absolute;
   top: 62px;
-  right: 27px;
+  left: 50%;
+  margin-left: 270px;
   width: 262px;
   padding: 27px 13px 29px 25px;
   background: #fefefe;
@@ -1730,7 +1732,7 @@ body > input[type="radio"]  {
 
 .social_btn {
   display: block;
-  margin-right: 14px;
+  margin-right: 10px;
   width: 34px;
   height: 34px;
   vertical-align: top;
