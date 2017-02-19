@@ -1170,7 +1170,8 @@ body > input[type="radio"]  {
   min-width: 1200px;
   margin: 0 auto;
   min-height: 430px;
-  background: url(../img/map.jpg) no-repeat;
+  background-image: url(../img/map.jpg) no-repeat;
+  background-color: #849d8f;
 }
 
 .map_contacts {
@@ -1462,6 +1463,7 @@ body > input[type="radio"]  {
 .fat_input + label {
   cursor: pointer;
 }
+
 .fat_input:not(checked) {
   position: absolute;
   opacity: 0;
@@ -1473,32 +1475,34 @@ body > input[type="radio"]  {
 }
 
 .fat_input + label::before {
+  box-sizing: border-box;
   content: '';
-  position: absolute;
+  display: block;
   top: 0;
   left: 0;
-  width: 17px;
-  height: 17px;
-  border: 1px solid #a6b8ae;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 0 0 1px #ffffff;
+  position: absolute;
 }
 
 .fat_input + label:hover::before {
-  box-shadow:  0 0 0 2px #ffffff;
+   border-width: 2px;
 }
 
 .fat_input:not(checked) + label::after {
-  content: '';
+ content: '';
+ box-sizing: border-box;
   position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 12px;
-  height: 12px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: 5px;
+  background-color: #ffffff;
   border-radius: 50%;
-  background: #ffffff;
-  opacity: 0;
-  transition: all .2s;
+   opacity: 0;
 }
 
 .fat_input:checked + label::after {
@@ -1561,14 +1565,14 @@ body > input[type="radio"]  {
 }
 
 .filter_check:not(checked) + label:hover::before {
-  box-shadow:  0 0 0 2px #ffffff;
+  box-shadow:  0 0 0 1px #ffffff;
 }
 
 .filter_check:not(checked) + label::after {
   content: '';
   position: absolute;
   top: 2px;
-  left: 5px;
+  left: 6px;
   width: 5px;
   height: 9px;
   border: 3px solid #ffffff;
@@ -1585,11 +1589,11 @@ body > input[type="radio"]  {
 }
 
 
-.filter_check:not(checked) + .disabled::after {
+.filter_check:not(checked) + .disabled::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: 6px;
   width: 18px;
   height: 18px;
   border: 1px solid #b2c1b7;
@@ -1600,7 +1604,7 @@ body > input[type="radio"]  {
   content: '';
   position: absolute;
   top: 2px;
-  left: 5px;
+  left: 6px;
   width: 5px;
   height: 9px;
   border: 3px solid #b2c1b7;
